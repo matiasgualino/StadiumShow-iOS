@@ -1,0 +1,7 @@
+version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
+options: "c2f7f512d21566ca875cc33802a7fe62"
+inputs: 
+- "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/MainViewController.swift"
+- "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/ShowColorsViewController.swift"
+- "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/FlashlightTableViewCell.swift"
+- "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/AppDelegate.swift"
