@@ -31,8 +31,8 @@ class ShowColorsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		// Do any additional setup after loading the view, typically from a nib.
-		println("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
+		self.navigationController?.interactivePopGestureRecognizer.enabled = false
+		
 		bannerView.adUnitID = "ca-app-pub-3940256099942544/6300978111"
 		bannerView.rootViewController = self
 		bannerView.loadRequest(GADRequest())

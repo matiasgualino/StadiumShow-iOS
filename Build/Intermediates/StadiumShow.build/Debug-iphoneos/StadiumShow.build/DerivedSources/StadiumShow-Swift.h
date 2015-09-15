@@ -149,6 +149,7 @@ SWIFT_CLASS("_TtC11StadiumShow18MainViewController")
 @property (nonatomic) AVCaptureDevice * __null_unspecified device;
 @property (nonatomic) BOOL running;
 @property (nonatomic) NSTimer * __nullable timer;
+@property (nonatomic) BOOL showInitialized;
 @property (nonatomic) WEPopoverController * __nullable wePopoverController;
 - (SWIFT_NULLABILITY(nonnull) instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

@@ -21,6 +21,7 @@ class FlashlightTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 		lblTitle.text = "Flashlight"
+		lblTitle.font = UIFont(name: "HelveticaNeue", size: 15.0)
 		
 		switchFlashlight.on = false
 		

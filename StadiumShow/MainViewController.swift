@@ -23,11 +23,12 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	
 	var selectedColors : [UIColor]?
 	
-	var delay : Double = 1.0
+	var delay : Double = 0.0
 	var flashlightON = false
 	var device : AVCaptureDevice!
 	var running = false
 	var timer : NSTimer?
+	var showInitialized : Bool = false
 	
 	var wePopoverController : WEPopoverController?
 	
@@ -43,9 +44,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-		// Do any additional setup after loading the view, typically from a nib.
-		println("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
-		bannerView.adUnitID = "ca-app-pub-3940256099942544/6300978111"
+		bannerView.adUnitID = "ca-app-pub-4401161763017089/4145738854"
 		bannerView.rootViewController = self
 		bannerView.loadRequest(GADRequest())
 		
@@ -88,18 +87,38 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	}
 	
 	func delayChanged() {
-		let pot = 0.5 * Double(self.delaySegmented.selectedSegmentIndex)
+		var phi = flashlightON ? 0.8 : 0.3
+		let pot = phi * Double(self.delaySegmented.selectedSegmentIndex)
 		self.delay = pow(2.7183, -pot)
-		println(self.delay)
+		if self.flashlightON {
+			if self.delaySegmented.selectedSegmentIndex == 0 && showInitialized {
+					timer?.invalidate()
+					running = false
+					changeFlash()
+			} else {
+/*				if self.delaySegmented.selectedSegmentIndex == 4 {
+					self.delay = self.delay/50
+				}*/
+				if showInitialized {
+					timer?.invalidate()
+					timer = NSTimer.scheduledTimerWithTimeInterval(self.delay, target: self, selector: Selector("changeFlash"), userInfo: nil, repeats: true)
+				}
+			}
+		}
 	}
 	
 	func initializeShow() {
+		showInitialized = true
 		if self.flashlightON {
 			device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
 			if device.torchMode == AVCaptureTorchMode.Off {
 				setRightButtonFinish()
-				timer?.invalidate()
-				timer = NSTimer.scheduledTimerWithTimeInterval(self.delay, target: self, selector: Selector("changeFlash"), userInfo: nil, repeats: true)
+				if self.delay == 0.0 {
+					changeFlash()
+				} else {
+					timer?.invalidate()
+					timer = NSTimer.scheduledTimerWithTimeInterval(self.delay, target: self, selector: Selector("changeFlash"), userInfo: nil, repeats: true)
+				}
 			} else {
 				/*			AVSession?.stopRunning()
 				AVSession = nil*/
@@ -110,10 +129,11 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	}
 	
 	func finishShow() {
+		showInitialized = false
 		setRightButtonInit()
 		timer?.invalidate()
 		self.running = false
-		self.AVSession!.stopRunning()
+		self.AVSession?.stopRunning()
 	}
 	
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -165,6 +185,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 				} else if indexPath.row == 1 {
 					var cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "SelectColor")
 					cell.textLabel?.text = "Seleccionar colores"
+					cell.textLabel?.font = UIFont(name: "HelveticaNeue", size: 15.0)
 					cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
 					return cell
 				}
@@ -214,6 +235,16 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		} else {
 			self.navigationItem.rightBarButtonItem?.enabled = false
 		}
+		if self.flashlightON {
+			if self.delaySegmented.selectedSegmentIndex == 0 {
+				self.delay = 0.0
+			} else if self.delaySegmented.selectedSegmentIndex == 4 {
+				self.delay = self.delay/50
+			}
+		} else {
+			delayChanged()
+			finishShow()
+		}
 		self.tableView.reloadData()
 	}
 	
@@ -230,6 +261,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		
 		device.torchMode = AVCaptureTorchMode.On
 		device.flashMode = AVCaptureFlashMode.On
+		
+		device.setTorchModeOnWithLevel(1.0, error: nil)
 		
 		device.unlockForConfiguration()
 		session.commitConfiguration()
