@@ -1,102 +1,461 @@
 ### Swift dependencies file v0 ###
-provides:
+provides-top-level:
 - "FlashlightDelegate"
 - "FlashlightTableViewCell"
-nominals:
+provides-nominal:
 - "P11StadiumShow18FlashlightDelegate"
 - "C11StadiumShow23FlashlightTableViewCell"
-class-members:
+provides-member:
+- ["P11StadiumShow18FlashlightDelegate", ""]
+- ["C11StadiumShow23FlashlightTableViewCell", ""]
+provides-dynamic-lookup:
 - "lblTitle"
 - "awakeFromNib"
 - "switchFlashlight"
 - "stateChanged"
-top-level:
+depends-top-level:
+- !private "UIControlEvents"
+- "FlashlightTableViewCell"
+- "UITableViewCell"
+- !private "BooleanLiteralType"
 - "UILabel"
 - "FlashlightDelegate"
 - !private "StringLiteralType"
-- "UITableViewCell"
 - "Bool"
-- "UISwitch"
-- !private "Selector"
-- !private "UIControlEvents"
-- !private "BooleanLiteralType"
 - !private "UIFont"
-member-access:
-- !private "CSo7UILabel"
-- !private "V10ObjectiveC8Selector"
-- "CSo6UIView"
-- !private "CSo6UIFont"
-- "CSo15UITableViewCell"
-- !private "CSo8UISwitch"
-- !private "VSC15UIControlEvents"
+- !private "Selector"
+- "UISwitch"
+depends-member:
+- !private ["PSs9AnyObject", "Selector"]
+- !private ["PSs9AnyObject", "UIControlEvents"]
+- !private ["PSs9AnyObject", "UIFont"]
+- !private ["PSs9AnyObject", "addTarget"]
+- ["PSs9AnyObject", "awakeFromNib"]
+- ["PSs9AnyObject", "flashlightDelegate"]
+- !private ["PSs9AnyObject", "font"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "lblTitle"]
+- !private ["PSs9AnyObject", "on"]
+- ["PSs9AnyObject", "stateChanged"]
+- ["PSs9AnyObject", "switchFlashlight"]
+- !private ["PSs9AnyObject", "text"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs23ArrayLiteralConvertible", "ValueChanged"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["PSs11CVarArgType", "Selector"]
+- !private ["PSs11CVarArgType", "UIControlEvents"]
+- !private ["PSs11CVarArgType", "UIFont"]
+- !private ["PSs11CVarArgType", "addTarget"]
+- ["PSs11CVarArgType", "awakeFromNib"]
+- ["PSs11CVarArgType", "flashlightDelegate"]
+- !private ["PSs11CVarArgType", "font"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "lblTitle"]
+- !private ["PSs11CVarArgType", "on"]
+- ["PSs11CVarArgType", "stateChanged"]
+- ["PSs11CVarArgType", "switchFlashlight"]
+- !private ["PSs11CVarArgType", "text"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "Selector"]
+- !private ["PSs23CustomStringConvertible", "UIControlEvents"]
+- !private ["PSs23CustomStringConvertible", "UIFont"]
+- !private ["PSs23CustomStringConvertible", "addTarget"]
+- ["PSs23CustomStringConvertible", "awakeFromNib"]
+- ["PSs23CustomStringConvertible", "flashlightDelegate"]
+- !private ["PSs23CustomStringConvertible", "font"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "lblTitle"]
+- !private ["PSs23CustomStringConvertible", "on"]
+- ["PSs23CustomStringConvertible", "stateChanged"]
+- ["PSs23CustomStringConvertible", "switchFlashlight"]
+- !private ["PSs23CustomStringConvertible", "text"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Selector"]
+- !private ["PSs9Equatable", "UIControlEvents"]
+- !private ["PSs9Equatable", "UIFont"]
+- !private ["PSs9Equatable", "ValueChanged"]
+- !private ["PSs9Equatable", "addTarget"]
+- ["PSs9Equatable", "awakeFromNib"]
+- ["PSs9Equatable", "flashlightDelegate"]
+- !private ["PSs9Equatable", "font"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "lblTitle"]
+- !private ["PSs9Equatable", "on"]
+- ["PSs9Equatable", "stateChanged"]
+- ["PSs9Equatable", "switchFlashlight"]
+- !private ["PSs9Equatable", "text"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- ["P11StadiumShow18FlashlightDelegate", "Bool"]
+- ["P11StadiumShow18FlashlightDelegate", "notifyFlashlight"]
+- ["C11StadiumShow23FlashlightTableViewCell", "FlashlightDelegate"]
+- !private ["C11StadiumShow23FlashlightTableViewCell", "Selector"]
+- !private ["C11StadiumShow23FlashlightTableViewCell", "UIControlEvents"]
+- !private ["C11StadiumShow23FlashlightTableViewCell", "UIFont"]
+- ["C11StadiumShow23FlashlightTableViewCell", "UILabel"]
+- ["C11StadiumShow23FlashlightTableViewCell", "UISwitch"]
+- ["C11StadiumShow23FlashlightTableViewCell", "awakeFromNib"]
+- ["C11StadiumShow23FlashlightTableViewCell", "deinit"]
+- ["C11StadiumShow23FlashlightTableViewCell", "flashlightDelegate"]
+- ["C11StadiumShow23FlashlightTableViewCell", "init"]
+- ["C11StadiumShow23FlashlightTableViewCell", "lblTitle"]
+- ["C11StadiumShow23FlashlightTableViewCell", "stateChanged"]
+- ["C11StadiumShow23FlashlightTableViewCell", "switchFlashlight"]
+- !private ["PSs8Hashable", "Selector"]
+- !private ["PSs8Hashable", "UIControlEvents"]
+- !private ["PSs8Hashable", "UIFont"]
+- !private ["PSs8Hashable", "addTarget"]
+- ["PSs8Hashable", "awakeFromNib"]
+- ["PSs8Hashable", "flashlightDelegate"]
+- !private ["PSs8Hashable", "font"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "lblTitle"]
+- !private ["PSs8Hashable", "on"]
+- ["PSs8Hashable", "stateChanged"]
+- ["PSs8Hashable", "switchFlashlight"]
+- !private ["PSs8Hashable", "text"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "Selector"]
+- !private ["PSo8NSCoding", "UIControlEvents"]
+- !private ["PSo8NSCoding", "UIFont"]
+- !private ["PSo8NSCoding", "addTarget"]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "flashlightDelegate"]
+- !private ["PSo8NSCoding", "font"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "lblTitle"]
+- !private ["PSo8NSCoding", "on"]
+- ["PSo8NSCoding", "stateChanged"]
+- ["PSo8NSCoding", "switchFlashlight"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- ["CSo8NSObject", "FlashlightDelegate"]
+- !private ["CSo8NSObject", "Selector"]
+- !private ["CSo8NSObject", "UIControlEvents"]
+- !private ["CSo8NSObject", "UIFont"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UISwitch"]
+- !private ["CSo8NSObject", "addTarget"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "flashlightDelegate"]
+- !private ["CSo8NSObject", "font"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "lblTitle"]
+- !private ["CSo8NSObject", "on"]
+- ["CSo8NSObject", "stateChanged"]
+- ["CSo8NSObject", "switchFlashlight"]
+- !private ["CSo8NSObject", "text"]
+- !private ["PSo16NSObjectProtocol", "Selector"]
+- !private ["PSo16NSObjectProtocol", "UIControlEvents"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
+- !private ["PSo16NSObjectProtocol", "addTarget"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "flashlightDelegate"]
+- !private ["PSo16NSObjectProtocol", "font"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "lblTitle"]
+- !private ["PSo16NSObjectProtocol", "on"]
+- ["PSo16NSObjectProtocol", "stateChanged"]
+- ["PSo16NSObjectProtocol", "switchFlashlight"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSs21NilLiteralConvertible", "init"]
+- !private ["PSs13OptionSetType", "ValueChanged"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16RawRepresentable", "ValueChanged"]
+- !private ["V10ObjectiveC8Selector", "init"]
+- !private ["PSs14SetAlgebraType", "ValueChanged"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "Selector"]
+- !private ["PSo29UIAccessibilityIdentification", "UIControlEvents"]
+- !private ["PSo29UIAccessibilityIdentification", "UIFont"]
+- !private ["PSo29UIAccessibilityIdentification", "addTarget"]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "flashlightDelegate"]
+- !private ["PSo29UIAccessibilityIdentification", "font"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "lblTitle"]
+- !private ["PSo29UIAccessibilityIdentification", "on"]
+- ["PSo29UIAccessibilityIdentification", "stateChanged"]
+- ["PSo29UIAccessibilityIdentification", "switchFlashlight"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "Selector"]
+- !private ["PSo12UIAppearance", "UIControlEvents"]
+- !private ["PSo12UIAppearance", "UIFont"]
+- !private ["PSo12UIAppearance", "addTarget"]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "flashlightDelegate"]
+- !private ["PSo12UIAppearance", "font"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "lblTitle"]
+- !private ["PSo12UIAppearance", "on"]
+- ["PSo12UIAppearance", "stateChanged"]
+- ["PSo12UIAppearance", "switchFlashlight"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "Selector"]
+- !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
+- !private ["PSo21UIAppearanceContainer", "addTarget"]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "flashlightDelegate"]
+- !private ["PSo21UIAppearanceContainer", "font"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "lblTitle"]
+- !private ["PSo21UIAppearanceContainer", "on"]
+- ["PSo21UIAppearanceContainer", "stateChanged"]
+- ["PSo21UIAppearanceContainer", "switchFlashlight"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo9UIControl", "addTarget"]
+- !private ["CSo9UIControl", "on"]
+- !private ["VSC15UIControlEvents", "ValueChanged"]
+- !private ["PSo17UICoordinateSpace", "Selector"]
+- !private ["PSo17UICoordinateSpace", "UIControlEvents"]
+- !private ["PSo17UICoordinateSpace", "UIFont"]
+- !private ["PSo17UICoordinateSpace", "addTarget"]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "flashlightDelegate"]
+- !private ["PSo17UICoordinateSpace", "font"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "lblTitle"]
+- !private ["PSo17UICoordinateSpace", "on"]
+- ["PSo17UICoordinateSpace", "stateChanged"]
+- ["PSo17UICoordinateSpace", "switchFlashlight"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "Selector"]
+- !private ["PSo13UIDynamicItem", "UIControlEvents"]
+- !private ["PSo13UIDynamicItem", "UIFont"]
+- !private ["PSo13UIDynamicItem", "addTarget"]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "flashlightDelegate"]
+- !private ["PSo13UIDynamicItem", "font"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "lblTitle"]
+- !private ["PSo13UIDynamicItem", "on"]
+- ["PSo13UIDynamicItem", "stateChanged"]
+- ["PSo13UIDynamicItem", "switchFlashlight"]
+- !private ["PSo13UIDynamicItem", "text"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "Selector"]
+- !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
+- !private ["PSo18UIFocusEnvironment", "addTarget"]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "flashlightDelegate"]
+- !private ["PSo18UIFocusEnvironment", "font"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "lblTitle"]
+- !private ["PSo18UIFocusEnvironment", "on"]
+- ["PSo18UIFocusEnvironment", "stateChanged"]
+- ["PSo18UIFocusEnvironment", "switchFlashlight"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo6UIFont", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "Selector"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIControlEvents"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIFont"]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "flashlightDelegate"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "lblTitle"]
+- ["PSo27UIGestureRecognizerDelegate", "stateChanged"]
+- ["PSo27UIGestureRecognizerDelegate", "switchFlashlight"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["CSo7UILabel", "font"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "FlashlightDelegate"]
+- !private ["CSo11UIResponder", "Selector"]
+- !private ["CSo11UIResponder", "UIControlEvents"]
+- !private ["CSo11UIResponder", "UIFont"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UISwitch"]
+- !private ["CSo11UIResponder", "addTarget"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "flashlightDelegate"]
+- !private ["CSo11UIResponder", "font"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "lblTitle"]
+- !private ["CSo11UIResponder", "on"]
+- ["CSo11UIResponder", "stateChanged"]
+- ["CSo11UIResponder", "switchFlashlight"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo8UISwitch", "addTarget"]
+- !private ["CSo8UISwitch", "on"]
+- ["CSo15UITableViewCell", "FlashlightDelegate"]
+- !private ["CSo15UITableViewCell", "Selector"]
+- !private ["CSo15UITableViewCell", "UIControlEvents"]
+- !private ["CSo15UITableViewCell", "UIFont"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "UISwitch"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "flashlightDelegate"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "lblTitle"]
+- ["CSo15UITableViewCell", "stateChanged"]
+- ["CSo15UITableViewCell", "switchFlashlight"]
+- ["CSo15UITableViewCell", ""]
+- !private ["PSo18UITraitEnvironment", "Selector"]
+- !private ["PSo18UITraitEnvironment", "UIControlEvents"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
+- !private ["PSo18UITraitEnvironment", "addTarget"]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "flashlightDelegate"]
+- !private ["PSo18UITraitEnvironment", "font"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "lblTitle"]
+- !private ["PSo18UITraitEnvironment", "on"]
+- ["PSo18UITraitEnvironment", "stateChanged"]
+- ["PSo18UITraitEnvironment", "switchFlashlight"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "FlashlightDelegate"]
+- !private ["CSo6UIView", "Selector"]
+- !private ["CSo6UIView", "UIControlEvents"]
+- !private ["CSo6UIView", "UIFont"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "UISwitch"]
+- !private ["CSo6UIView", "addTarget"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "flashlightDelegate"]
+- !private ["CSo6UIView", "font"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "lblTitle"]
+- !private ["CSo6UIView", "on"]
+- ["CSo6UIView", "stateChanged"]
+- ["CSo6UIView", "switchFlashlight"]
+- !private ["CSo6UIView", "text"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs12_Reflectable", "Selector"]
+- !private ["PSs12_Reflectable", "UIControlEvents"]
+- !private ["PSs12_Reflectable", "UIFont"]
+- !private ["PSs12_Reflectable", "addTarget"]
+- ["PSs12_Reflectable", "awakeFromNib"]
+- ["PSs12_Reflectable", "flashlightDelegate"]
+- !private ["PSs12_Reflectable", "font"]
+- ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", "lblTitle"]
+- !private ["PSs12_Reflectable", "on"]
+- ["PSs12_Reflectable", "stateChanged"]
+- ["PSs12_Reflectable", "switchFlashlight"]
+- !private ["PSs12_Reflectable", "text"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
 - "P11StadiumShow18FlashlightDelegate"
 - "C11StadiumShow23FlashlightTableViewCell"
-- "CSo11UIResponder"
-- !private "Sq"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSs21NilLiteralConvertible"
+- !private "PSs13OptionSetType"
+- !private "Sq"
+- !private "PSs16RawRepresentable"
+- !private "V10ObjectiveC8Selector"
+- !private "PSs14SetAlgebraType"
+- !private "PSs24StringLiteralConvertible"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
 - !private "CSo9UIControl"
-- "PSs9AnyObject"
-- !private "V12CoreGraphics7CGFloat"
-dynamic-lookup:
-cross-module:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"
+- !private "VSC15UIControlEvents"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo6UIFont"
+- "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- !private "CSo8UISwitch"
+- "CSo15UITableViewCell"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow-Bridging-Header.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/Popover/WEPopoverController.h"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Security.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/CoreImage.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/Popover/WEPopoverContainerView.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/Popover/WETouchableView.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/ColorViewController.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/GzColors.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/ColorButton.h"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/CoreAudio.swiftmodule"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdReward.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdLoader.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPBannerView.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADMobileAds.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInterstitial.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADExtras.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRequestError.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADBannerView.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdSize.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "./GoogleMobileAds.framework/Headers/GADExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "./GoogleMobileAds.framework/Headers/GADRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "./GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+interface-hash: "7a2672e5631bef6fee8f9f24d83c9c65"

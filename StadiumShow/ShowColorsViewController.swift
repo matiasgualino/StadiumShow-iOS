@@ -27,15 +27,25 @@ class ShowColorsViewController: UIViewController {
 	required init(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
+
+	override func viewWillAppear(animated: Bool) {
+		self.colorView.backgroundColor = colors![0]
+		self.view.backgroundColor = colors![0]
+		self.navigationController?.navigationBar.barTintColor = colors![0]
+	}
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		self.navigationController?.interactivePopGestureRecognizer.enabled = false
+		self.navigationController?.interactivePopGestureRecognizer!.enabled = false
 		
 		bannerView.adUnitID = "ca-app-pub-3940256099942544/6300978111"
 		bannerView.rootViewController = self
 		bannerView.loadRequest(GADRequest())
+		
+		self.view.backgroundColor = colors![index]
+		self.navigationController?.navigationBar.barTintColor = colors![index]
+		index++
 		
 		NSTimer.scheduledTimerWithTimeInterval(self.delay, target: self, selector: Selector("showColors"), userInfo: nil, repeats: true)
     }
@@ -44,6 +54,7 @@ class ShowColorsViewController: UIViewController {
 		let indexColor = index % colors!.count
 		self.colorView.backgroundColor = colors![indexColor]
 		self.view.backgroundColor = colors![indexColor]
+		self.navigationController?.navigationBar.barTintColor = colors![indexColor]
 		index = index + 1
 	}
 

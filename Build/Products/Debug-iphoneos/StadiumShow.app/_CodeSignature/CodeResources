@@ -42,68 +42,112 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		kIVj/MYlf3gojt1X8bNZGMAhKqw=
+		T9SXKjGOTOw2aE7jG8rRo9sQuCs=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gs1KClDhw/Xq1l7bBpzwPqrkuPM=
+			4yqYEwpzbZjEb2eiDrtBDBTUIqE=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>FlashlightTableViewCell.nib</key>
 		<data>
-		FPJM04d1o7EGmTVQ9V38dVQ4H2I=
+		e5W1ZMgqfah8CRbZSZ3K4P8imfk=
+		</data>
+		<key>FlashlightTableViewCell~ipad.nib/objects-8.0+.nib</key>
+		<data>
+		LDbZ6eCVFnvY7wBvxnbayEVnK8w=
+		</data>
+		<key>FlashlightTableViewCell~ipad.nib/runtime.nib</key>
+		<data>
+		qDxvg0BlBFLYnmrH5JO6Hi6b1LA=
+		</data>
+		<key>FlashlightTableViewCell~iphone.nib/objects-8.0+.nib</key>
+		<data>
+		daUbrpM5iFD46CxEkBnOiNWwD3I=
+		</data>
+		<key>FlashlightTableViewCell~iphone.nib/runtime.nib</key>
+		<data>
+		RsmeG/lR0Zksoe6M67GjyOOv7+U=
+		</data>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<data>
+		57OYQYsrTOrcoRXx1vj6uvj5hSE=
+		</data>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<data>
+		V6tLCWcrb+wcntIpVM/FckIrLvU=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		o9NIXT9HL75wOzslZv4KoTADJ8E=
+		1aUyWe4woTvejCjRwZLs3OV6NgY=
 		</data>
 		<key>Frameworks/libswiftCoreAudio.dylib</key>
 		<data>
-		Fl+yjtRwr8uDHOx4jkRoM/Cym4s=
+		UsiiKIMXDqxww+UersoAkWj95yg=
+		</data>
+		<key>Frameworks/libswiftCoreData.dylib</key>
+		<data>
+		sO2ZhWCcCu2xytBHxp1xu/vwS7k=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		LSUh2OBGe0mYGLYW7FvybYf8ie0=
+		TupuMrwrAqXXiQ3PXvTtQRUxNb4=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		ItvanQeT8YeWjgWSbEjcbFvG4YU=
+		AkWWNgtyUcUjBfONyxFJQip7ilc=
+		</data>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<data>
+		+EBjvE1MPd7OaUGuCykDS3CR6A4=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		gee/e/+d5kThiVU92AbqT1oGTHk=
+		EFQLytYaJAyXuFQ3Ndxdcy22nhU=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		ID77HWhIbTvN5+CeP3vNDcz0JsQ=
+		L4bjN/iPhFxDnoUhhmK5xzE+GRU=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		9Nb+2vOCGvlKvtyKICOgC4h1E+Q=
+		m3v7s9nKKYsoNITb33ZigMmpxsA=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		RRQ+cmmSE0+NOsXxoFkJ5nHJI0w=
-		</data>
-		<key>Frameworks/libswiftSecurity.dylib</key>
-		<data>
-		OQniGX38kKL0jWdToaiY7M1auT4=
+		MeeTy4TX8PBUh3UTO48pQcbetaY=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		iP7xrC7Gyp8XAOG3NsZ0ddqevKc=
+		CNoTl9tzhe3l5ojKBBiMnZE2PVY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IqKrWet0gDE0yf5GCY3gGsV8LhM=
+		dYLctP6+zCw9Vwon0jIVDeOHG3g=
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		bki9iNHhgHTfiy/7N3honc6jUE4=
+		8zydE/Kj/RGuRJAngrm52eLQ61g=
+		</data>
+		<key>MainViewController~ipad.nib/objects-8.0+.nib</key>
+		<data>
+		8FZVOfF6foGrC9bTyIf8pXx9WtI=
+		</data>
+		<key>MainViewController~ipad.nib/runtime.nib</key>
+		<data>
+		ed1hNbVDXHtkwdbE87r0m59UzAI=
+		</data>
+		<key>MainViewController~iphone.nib/objects-8.0+.nib</key>
+		<data>
+		fgc+F77Lm4Wqx192d9SHL9edPBY=
+		</data>
+		<key>MainViewController~iphone.nib/runtime.nib</key>
+		<data>
+		LBNzFN0ORkk8rSQe0PmKXBd4PIk=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -115,7 +159,23 @@
 		</data>
 		<key>ShowColorsViewController.nib</key>
 		<data>
-		NF5tplHFw27dPPp4IWh1cVYbHFE=
+		PmKPbC16zw/t9dcz30UbWq/XMNI=
+		</data>
+		<key>ShowColorsViewController~ipad.nib/objects-8.0+.nib</key>
+		<data>
+		fa1xMbhnQwKv8fg0h/66jw5WWzU=
+		</data>
+		<key>ShowColorsViewController~ipad.nib/runtime.nib</key>
+		<data>
+		7/4dWXYiTJ4xgL49h1goQ7os1DU=
+		</data>
+		<key>ShowColorsViewController~iphone.nib/objects-8.0+.nib</key>
+		<data>
+		v538TCz9/DISiTXbzjHpqiWc6jo=
+		</data>
+		<key>ShowColorsViewController~iphone.nib/runtime.nib</key>
+		<data>
+		nQjFdZJHVcvRH2ck995+7kWKU2Y=
 		</data>
 		<key>StadiumShow.momd/StadiumShow.mom</key>
 		<data>
@@ -123,7 +183,7 @@
 		</data>
 		<key>StadiumShow.momd/StadiumShow.omo</key>
 		<data>
-		6hm3t/ntljZlDttp7er1FlGpS3k=
+		BM3Ddtnoy4L+yP9G5ZuhB8dL0cw=
 		</data>
 		<key>StadiumShow.momd/VersionInfo.plist</key>
 		<data>
@@ -135,7 +195,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		BCh9kEKBnGcGriNbfVgcyTZnn20=
+		hMVOxjsJTSF3l1L9183PYy+xUdw=
 		</data>
 		<key>en.lproj/ColorPopoverLocalizable.strings</key>
 		<dict>
@@ -251,64 +311,108 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		kIVj/MYlf3gojt1X8bNZGMAhKqw=
+		T9SXKjGOTOw2aE7jG8rRo9sQuCs=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gs1KClDhw/Xq1l7bBpzwPqrkuPM=
+			4yqYEwpzbZjEb2eiDrtBDBTUIqE=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>FlashlightTableViewCell.nib</key>
 		<data>
-		FPJM04d1o7EGmTVQ9V38dVQ4H2I=
+		e5W1ZMgqfah8CRbZSZ3K4P8imfk=
+		</data>
+		<key>FlashlightTableViewCell~ipad.nib/objects-8.0+.nib</key>
+		<data>
+		LDbZ6eCVFnvY7wBvxnbayEVnK8w=
+		</data>
+		<key>FlashlightTableViewCell~ipad.nib/runtime.nib</key>
+		<data>
+		qDxvg0BlBFLYnmrH5JO6Hi6b1LA=
+		</data>
+		<key>FlashlightTableViewCell~iphone.nib/objects-8.0+.nib</key>
+		<data>
+		daUbrpM5iFD46CxEkBnOiNWwD3I=
+		</data>
+		<key>FlashlightTableViewCell~iphone.nib/runtime.nib</key>
+		<data>
+		RsmeG/lR0Zksoe6M67GjyOOv7+U=
+		</data>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<data>
+		57OYQYsrTOrcoRXx1vj6uvj5hSE=
+		</data>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<data>
+		V6tLCWcrb+wcntIpVM/FckIrLvU=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		o9NIXT9HL75wOzslZv4KoTADJ8E=
+		1aUyWe4woTvejCjRwZLs3OV6NgY=
 		</data>
 		<key>Frameworks/libswiftCoreAudio.dylib</key>
 		<data>
-		Fl+yjtRwr8uDHOx4jkRoM/Cym4s=
+		UsiiKIMXDqxww+UersoAkWj95yg=
+		</data>
+		<key>Frameworks/libswiftCoreData.dylib</key>
+		<data>
+		sO2ZhWCcCu2xytBHxp1xu/vwS7k=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		LSUh2OBGe0mYGLYW7FvybYf8ie0=
+		TupuMrwrAqXXiQ3PXvTtQRUxNb4=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		ItvanQeT8YeWjgWSbEjcbFvG4YU=
+		AkWWNgtyUcUjBfONyxFJQip7ilc=
+		</data>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<data>
+		+EBjvE1MPd7OaUGuCykDS3CR6A4=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		gee/e/+d5kThiVU92AbqT1oGTHk=
+		EFQLytYaJAyXuFQ3Ndxdcy22nhU=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		ID77HWhIbTvN5+CeP3vNDcz0JsQ=
+		L4bjN/iPhFxDnoUhhmK5xzE+GRU=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		9Nb+2vOCGvlKvtyKICOgC4h1E+Q=
+		m3v7s9nKKYsoNITb33ZigMmpxsA=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		RRQ+cmmSE0+NOsXxoFkJ5nHJI0w=
-		</data>
-		<key>Frameworks/libswiftSecurity.dylib</key>
-		<data>
-		OQniGX38kKL0jWdToaiY7M1auT4=
+		MeeTy4TX8PBUh3UTO48pQcbetaY=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		iP7xrC7Gyp8XAOG3NsZ0ddqevKc=
+		CNoTl9tzhe3l5ojKBBiMnZE2PVY=
 		</data>
 		<key>MainViewController.nib</key>
 		<data>
-		bki9iNHhgHTfiy/7N3honc6jUE4=
+		8zydE/Kj/RGuRJAngrm52eLQ61g=
+		</data>
+		<key>MainViewController~ipad.nib/objects-8.0+.nib</key>
+		<data>
+		8FZVOfF6foGrC9bTyIf8pXx9WtI=
+		</data>
+		<key>MainViewController~ipad.nib/runtime.nib</key>
+		<data>
+		ed1hNbVDXHtkwdbE87r0m59UzAI=
+		</data>
+		<key>MainViewController~iphone.nib/objects-8.0+.nib</key>
+		<data>
+		fgc+F77Lm4Wqx192d9SHL9edPBY=
+		</data>
+		<key>MainViewController~iphone.nib/runtime.nib</key>
+		<data>
+		LBNzFN0ORkk8rSQe0PmKXBd4PIk=
 		</data>
 		<key>README</key>
 		<data>
@@ -316,7 +420,23 @@
 		</data>
 		<key>ShowColorsViewController.nib</key>
 		<data>
-		NF5tplHFw27dPPp4IWh1cVYbHFE=
+		PmKPbC16zw/t9dcz30UbWq/XMNI=
+		</data>
+		<key>ShowColorsViewController~ipad.nib/objects-8.0+.nib</key>
+		<data>
+		fa1xMbhnQwKv8fg0h/66jw5WWzU=
+		</data>
+		<key>ShowColorsViewController~ipad.nib/runtime.nib</key>
+		<data>
+		7/4dWXYiTJ4xgL49h1goQ7os1DU=
+		</data>
+		<key>ShowColorsViewController~iphone.nib/objects-8.0+.nib</key>
+		<data>
+		v538TCz9/DISiTXbzjHpqiWc6jo=
+		</data>
+		<key>ShowColorsViewController~iphone.nib/runtime.nib</key>
+		<data>
+		nQjFdZJHVcvRH2ck995+7kWKU2Y=
 		</data>
 		<key>StadiumShow.momd/StadiumShow.mom</key>
 		<data>
@@ -324,7 +444,7 @@
 		</data>
 		<key>StadiumShow.momd/StadiumShow.omo</key>
 		<data>
-		6hm3t/ntljZlDttp7er1FlGpS3k=
+		BM3Ddtnoy4L+yP9G5ZuhB8dL0cw=
 		</data>
 		<key>StadiumShow.momd/VersionInfo.plist</key>
 		<data>
@@ -336,7 +456,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		BCh9kEKBnGcGriNbfVgcyTZnn20=
+		hMVOxjsJTSF3l1L9183PYy+xUdw=
 		</data>
 		<key>en.lproj/ColorPopoverLocalizable.strings</key>
 		<dict>

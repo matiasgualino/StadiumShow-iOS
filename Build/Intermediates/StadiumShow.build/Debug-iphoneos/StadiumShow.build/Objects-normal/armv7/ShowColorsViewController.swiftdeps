@@ -1,108 +1,795 @@
 ### Swift dependencies file v0 ###
-provides:
+provides-top-level:
 - "ShowColorsViewController"
-nominals:
+provides-nominal:
 - "C11StadiumShow24ShowColorsViewController"
-class-members:
-- "colorView"
-- "colors"
-- "viewDidLoad"
-- "index"
+provides-member:
+- ["C11StadiumShow24ShowColorsViewController", ""]
+provides-dynamic-lookup:
+- "viewWillAppear"
 - "delay"
-- "bannerView"
+- "colorView"
+- "viewDidLoad"
+- "colors"
 - "showColors"
-top-level:
-- "NSCoder"
-- "UIColor"
-- !private "%"
-- !private "BooleanLiteralType"
-- !private "NSTimer"
-- "UIViewController"
+- "index"
+- "bannerView"
+depends-top-level:
 - "Double"
-- !private "GADRequest"
-- !private "StringLiteralType"
+- "UIColor"
+- !private "+"
 - !private "Selector"
+- "Bool"
+- !private "StringLiteralType"
+- !private "%"
+- "UIViewController"
+- !private "++"
+- "ShowColorsViewController"
 - "UIView"
 - "GADBannerView"
+- !private "BooleanLiteralType"
+- !private "GADRequest"
 - !private "fatalError"
-- !private "+"
-member-access:
-- !private "CSo13GADBannerView"
-- !private "CSo6UIView"
-- !private "SQ"
-- !private "CSo22UINavigationController"
-- !private "Sa"
-- "CSo11UIResponder"
-- !private "CSo7NSTimer"
-- !private "Sq"
-- "C11StadiumShow24ShowColorsViewController"
-- "CSo8NSObject"
+- "NSCoder"
+- !private "NSTimer"
+depends-member:
+- !private ["PSs9AnyObject", "GADRequest"]
+- !private ["PSs9AnyObject", "NSTimer"]
+- !private ["PSs9AnyObject", "Selector"]
+- !private ["PSs9AnyObject", "adUnitID"]
+- !private ["PSs9AnyObject", "automaticallyAdjustsScrollViewInsets"]
+- !private ["PSs9AnyObject", "backgroundColor"]
+- ["PSs9AnyObject", "bannerView"]
+- !private ["PSs9AnyObject", "barTintColor"]
+- ["PSs9AnyObject", "colorView"]
+- ["PSs9AnyObject", "colors"]
+- ["PSs9AnyObject", "delay"]
+- !private ["PSs9AnyObject", "enabled"]
+- !private ["PSs9AnyObject", "fatalError"]
+- ["PSs9AnyObject", "index"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "interactivePopGestureRecognizer"]
+- !private ["PSs9AnyObject", "loadRequest"]
+- !private ["PSs9AnyObject", "navigationBar"]
+- !private ["PSs9AnyObject", "navigationController"]
+- !private ["PSs9AnyObject", "rootViewController"]
+- !private ["PSs9AnyObject", "scheduledTimerWithTimeInterval"]
+- ["PSs9AnyObject", "showColors"]
+- !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", "viewWillAppear"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "count"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "count"]
+- !private ["PSs23ArrayLiteralConvertible", "subscript"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "GADRequest"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "NSTimer"]
+- !private ["PSs11CVarArgType", "Selector"]
+- !private ["PSs11CVarArgType", "adUnitID"]
+- !private ["PSs11CVarArgType", "automaticallyAdjustsScrollViewInsets"]
+- !private ["PSs11CVarArgType", "backgroundColor"]
+- ["PSs11CVarArgType", "bannerView"]
+- !private ["PSs11CVarArgType", "barTintColor"]
+- ["PSs11CVarArgType", "colorView"]
+- ["PSs11CVarArgType", "colors"]
+- ["PSs11CVarArgType", "delay"]
+- !private ["PSs11CVarArgType", "enabled"]
+- !private ["PSs11CVarArgType", "fatalError"]
+- ["PSs11CVarArgType", "index"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "interactivePopGestureRecognizer"]
+- !private ["PSs11CVarArgType", "loadRequest"]
+- !private ["PSs11CVarArgType", "navigationBar"]
+- !private ["PSs11CVarArgType", "navigationController"]
+- !private ["PSs11CVarArgType", "rootViewController"]
+- !private ["PSs11CVarArgType", "scheduledTimerWithTimeInterval"]
+- ["PSs11CVarArgType", "showColors"]
+- !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", "viewWillAppear"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "count"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "count"]
+- !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "GADRequest"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "NSTimer"]
+- !private ["PSs23CustomStringConvertible", "Selector"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "adUnitID"]
+- !private ["PSs23CustomStringConvertible", "automaticallyAdjustsScrollViewInsets"]
+- !private ["PSs23CustomStringConvertible", "backgroundColor"]
+- ["PSs23CustomStringConvertible", "bannerView"]
+- !private ["PSs23CustomStringConvertible", "barTintColor"]
+- ["PSs23CustomStringConvertible", "colorView"]
+- ["PSs23CustomStringConvertible", "colors"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- ["PSs23CustomStringConvertible", "delay"]
+- !private ["PSs23CustomStringConvertible", "enabled"]
+- !private ["PSs23CustomStringConvertible", "fatalError"]
+- ["PSs23CustomStringConvertible", "index"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "interactivePopGestureRecognizer"]
+- !private ["PSs23CustomStringConvertible", "loadRequest"]
+- !private ["PSs23CustomStringConvertible", "navigationBar"]
+- !private ["PSs23CustomStringConvertible", "navigationController"]
+- !private ["PSs23CustomStringConvertible", "rootViewController"]
+- !private ["PSs23CustomStringConvertible", "scheduledTimerWithTimeInterval"]
+- ["PSs23CustomStringConvertible", "showColors"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", "viewWillAppear"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "GADRequest"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "NSTimer"]
+- !private ["PSs9Equatable", "Selector"]
+- !private ["PSs9Equatable", "adUnitID"]
+- !private ["PSs9Equatable", "automaticallyAdjustsScrollViewInsets"]
+- !private ["PSs9Equatable", "backgroundColor"]
+- ["PSs9Equatable", "bannerView"]
+- !private ["PSs9Equatable", "barTintColor"]
+- ["PSs9Equatable", "colorView"]
+- ["PSs9Equatable", "colors"]
+- ["PSs9Equatable", "delay"]
+- !private ["PSs9Equatable", "enabled"]
+- !private ["PSs9Equatable", "fatalError"]
+- ["PSs9Equatable", "index"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "interactivePopGestureRecognizer"]
+- !private ["PSs9Equatable", "loadRequest"]
+- !private ["PSs9Equatable", "navigationBar"]
+- !private ["PSs9Equatable", "navigationController"]
+- !private ["PSs9Equatable", "rootViewController"]
+- !private ["PSs9Equatable", "scheduledTimerWithTimeInterval"]
+- ["PSs9Equatable", "showColors"]
+- !private ["PSs9Equatable", "view"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", "viewWillAppear"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["CSo13GADBannerView", "adUnitID"]
+- !private ["CSo13GADBannerView", "loadRequest"]
+- !private ["CSo13GADBannerView", "rootViewController"]
+- !private ["CSo10GADRequest", "init"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "GADRequest"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "NSTimer"]
+- !private ["PSs8Hashable", "Selector"]
+- !private ["PSs8Hashable", "adUnitID"]
+- !private ["PSs8Hashable", "automaticallyAdjustsScrollViewInsets"]
+- !private ["PSs8Hashable", "backgroundColor"]
+- ["PSs8Hashable", "bannerView"]
+- !private ["PSs8Hashable", "barTintColor"]
+- ["PSs8Hashable", "colorView"]
+- ["PSs8Hashable", "colors"]
+- ["PSs8Hashable", "delay"]
+- !private ["PSs8Hashable", "enabled"]
+- !private ["PSs8Hashable", "fatalError"]
+- ["PSs8Hashable", "index"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "interactivePopGestureRecognizer"]
+- !private ["PSs8Hashable", "loadRequest"]
+- !private ["PSs8Hashable", "navigationBar"]
+- !private ["PSs8Hashable", "navigationController"]
+- !private ["PSs8Hashable", "rootViewController"]
+- !private ["PSs8Hashable", "scheduledTimerWithTimeInterval"]
+- ["PSs8Hashable", "showColors"]
+- !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", "viewWillAppear"]
+- ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "count"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "count"]
+- !private ["PSs21MutableCollectionType", "subscript"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "count"]
+- !private ["PSs16MutableIndexable", "subscript"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "count"]
+- !private ["PSs16MutableSliceable", "subscript"]
+- !private ["PSo8NSCoding", "GADRequest"]
+- !private ["PSo8NSCoding", "NSTimer"]
+- !private ["PSo8NSCoding", "Selector"]
+- !private ["PSo8NSCoding", "adUnitID"]
+- !private ["PSo8NSCoding", "automaticallyAdjustsScrollViewInsets"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- ["PSo8NSCoding", "bannerView"]
+- !private ["PSo8NSCoding", "barTintColor"]
+- ["PSo8NSCoding", "colorView"]
+- ["PSo8NSCoding", "colors"]
+- ["PSo8NSCoding", "delay"]
+- !private ["PSo8NSCoding", "fatalError"]
+- ["PSo8NSCoding", "index"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "interactivePopGestureRecognizer"]
+- !private ["PSo8NSCoding", "loadRequest"]
+- !private ["PSo8NSCoding", "navigationBar"]
+- !private ["PSo8NSCoding", "navigationController"]
+- !private ["PSo8NSCoding", "rootViewController"]
+- ["PSo8NSCoding", "showColors"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "viewWillAppear"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "GADRequest"]
+- !private ["PSo26NSExtensionRequestHandling", "NSTimer"]
+- !private ["PSo26NSExtensionRequestHandling", "Selector"]
+- !private ["PSo26NSExtensionRequestHandling", "automaticallyAdjustsScrollViewInsets"]
+- ["PSo26NSExtensionRequestHandling", "bannerView"]
+- ["PSo26NSExtensionRequestHandling", "colorView"]
+- ["PSo26NSExtensionRequestHandling", "colors"]
+- ["PSo26NSExtensionRequestHandling", "delay"]
+- !private ["PSo26NSExtensionRequestHandling", "fatalError"]
+- ["PSo26NSExtensionRequestHandling", "index"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "interactivePopGestureRecognizer"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- ["PSo26NSExtensionRequestHandling", "showColors"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "GADBannerView"]
+- !private ["CSo8NSObject", "GADRequest"]
+- ["CSo8NSObject", "NSCoder"]
+- !private ["CSo8NSObject", "NSTimer"]
+- !private ["CSo8NSObject", "Selector"]
+- ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UIView"]
+- !private ["CSo8NSObject", "adUnitID"]
+- !private ["CSo8NSObject", "automaticallyAdjustsScrollViewInsets"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- ["CSo8NSObject", "bannerView"]
+- !private ["CSo8NSObject", "barTintColor"]
+- ["CSo8NSObject", "colorView"]
+- ["CSo8NSObject", "colors"]
+- ["CSo8NSObject", "delay"]
+- !private ["CSo8NSObject", "enabled"]
+- !private ["CSo8NSObject", "fatalError"]
+- ["CSo8NSObject", "index"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "interactivePopGestureRecognizer"]
+- !private ["CSo8NSObject", "loadRequest"]
+- !private ["CSo8NSObject", "navigationBar"]
+- !private ["CSo8NSObject", "navigationController"]
+- !private ["CSo8NSObject", "rootViewController"]
+- !private ["CSo8NSObject", "scheduledTimerWithTimeInterval"]
+- ["CSo8NSObject", "showColors"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
+- !private ["PSo16NSObjectProtocol", "GADRequest"]
+- !private ["PSo16NSObjectProtocol", "NSTimer"]
+- !private ["PSo16NSObjectProtocol", "Selector"]
+- !private ["PSo16NSObjectProtocol", "adUnitID"]
+- !private ["PSo16NSObjectProtocol", "automaticallyAdjustsScrollViewInsets"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- ["PSo16NSObjectProtocol", "bannerView"]
+- !private ["PSo16NSObjectProtocol", "barTintColor"]
+- ["PSo16NSObjectProtocol", "colorView"]
+- ["PSo16NSObjectProtocol", "colors"]
+- ["PSo16NSObjectProtocol", "delay"]
+- !private ["PSo16NSObjectProtocol", "enabled"]
+- !private ["PSo16NSObjectProtocol", "fatalError"]
+- ["PSo16NSObjectProtocol", "index"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "interactivePopGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "loadRequest"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
+- !private ["PSo16NSObjectProtocol", "rootViewController"]
+- !private ["PSo16NSObjectProtocol", "scheduledTimerWithTimeInterval"]
+- ["PSo16NSObjectProtocol", "showColors"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo7NSTimer", "scheduledTimerWithTimeInterval"]
+- !private ["PSs21NilLiteralConvertible", "init"]
+- !private ["Sq", "deinit"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["V10ObjectiveC8Selector", "init"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "count"]
+- !private ["PSs12SequenceType", "subscript"]
+- ["C11StadiumShow24ShowColorsViewController", "Bool"]
+- ["C11StadiumShow24ShowColorsViewController", "Double"]
+- ["C11StadiumShow24ShowColorsViewController", "GADBannerView"]
+- !private ["C11StadiumShow24ShowColorsViewController", "GADRequest"]
+- ["C11StadiumShow24ShowColorsViewController", "NSCoder"]
+- !private ["C11StadiumShow24ShowColorsViewController", "NSTimer"]
+- !private ["C11StadiumShow24ShowColorsViewController", "Selector"]
+- ["C11StadiumShow24ShowColorsViewController", "UIColor"]
+- ["C11StadiumShow24ShowColorsViewController", "UIView"]
+- !private ["C11StadiumShow24ShowColorsViewController", "automaticallyAdjustsScrollViewInsets"]
+- ["C11StadiumShow24ShowColorsViewController", "bannerView"]
+- ["C11StadiumShow24ShowColorsViewController", "colorView"]
+- ["C11StadiumShow24ShowColorsViewController", "colors"]
+- ["C11StadiumShow24ShowColorsViewController", "deinit"]
+- ["C11StadiumShow24ShowColorsViewController", "delay"]
+- !private ["C11StadiumShow24ShowColorsViewController", "fatalError"]
+- ["C11StadiumShow24ShowColorsViewController", "index"]
+- ["C11StadiumShow24ShowColorsViewController", "init"]
+- !private ["C11StadiumShow24ShowColorsViewController", "navigationController"]
+- ["C11StadiumShow24ShowColorsViewController", "showColors"]
+- !private ["C11StadiumShow24ShowColorsViewController", "view"]
+- ["C11StadiumShow24ShowColorsViewController", "viewDidLoad"]
+- ["C11StadiumShow24ShowColorsViewController", "viewWillAppear"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["VSs12StaticString", "deinit"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "adUnitID"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "loadRequest"]
+- !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
+- !private ["PSo12UIAppearance", "adUnitID"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "barTintColor"]
+- !private ["PSo12UIAppearance", "loadRequest"]
+- !private ["PSo12UIAppearance", "rootViewController"]
+- !private ["PSo21UIAppearanceContainer", "GADRequest"]
+- !private ["PSo21UIAppearanceContainer", "NSTimer"]
+- !private ["PSo21UIAppearanceContainer", "Selector"]
+- !private ["PSo21UIAppearanceContainer", "adUnitID"]
+- !private ["PSo21UIAppearanceContainer", "automaticallyAdjustsScrollViewInsets"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- ["PSo21UIAppearanceContainer", "bannerView"]
+- !private ["PSo21UIAppearanceContainer", "barTintColor"]
+- ["PSo21UIAppearanceContainer", "colorView"]
+- ["PSo21UIAppearanceContainer", "colors"]
+- ["PSo21UIAppearanceContainer", "delay"]
+- !private ["PSo21UIAppearanceContainer", "fatalError"]
+- ["PSo21UIAppearanceContainer", "index"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "interactivePopGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "loadRequest"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
+- !private ["PSo21UIAppearanceContainer", "rootViewController"]
+- ["PSo21UIAppearanceContainer", "showColors"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "viewWillAppear"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "barTintColor"]
+- !private ["PSo18UIContentContainer", "GADRequest"]
+- !private ["PSo18UIContentContainer", "NSTimer"]
+- !private ["PSo18UIContentContainer", "Selector"]
+- !private ["PSo18UIContentContainer", "automaticallyAdjustsScrollViewInsets"]
+- ["PSo18UIContentContainer", "bannerView"]
+- ["PSo18UIContentContainer", "colorView"]
+- ["PSo18UIContentContainer", "colors"]
+- ["PSo18UIContentContainer", "delay"]
+- !private ["PSo18UIContentContainer", "fatalError"]
+- ["PSo18UIContentContainer", "index"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "interactivePopGestureRecognizer"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
+- !private ["PSo18UIContentContainer", "navigationController"]
+- ["PSo18UIContentContainer", "showColors"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "viewWillAppear"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "adUnitID"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "barTintColor"]
+- !private ["PSo17UICoordinateSpace", "loadRequest"]
+- !private ["PSo17UICoordinateSpace", "rootViewController"]
+- !private ["PSo13UIDynamicItem", "adUnitID"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "barTintColor"]
+- !private ["PSo13UIDynamicItem", "loadRequest"]
+- !private ["PSo13UIDynamicItem", "rootViewController"]
+- !private ["PSo18UIFocusEnvironment", "GADRequest"]
+- !private ["PSo18UIFocusEnvironment", "NSTimer"]
+- !private ["PSo18UIFocusEnvironment", "Selector"]
+- !private ["PSo18UIFocusEnvironment", "adUnitID"]
+- !private ["PSo18UIFocusEnvironment", "automaticallyAdjustsScrollViewInsets"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- ["PSo18UIFocusEnvironment", "bannerView"]
+- !private ["PSo18UIFocusEnvironment", "barTintColor"]
+- ["PSo18UIFocusEnvironment", "colorView"]
+- ["PSo18UIFocusEnvironment", "colors"]
+- ["PSo18UIFocusEnvironment", "delay"]
+- !private ["PSo18UIFocusEnvironment", "fatalError"]
+- ["PSo18UIFocusEnvironment", "index"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "interactivePopGestureRecognizer"]
+- !private ["PSo18UIFocusEnvironment", "loadRequest"]
+- !private ["PSo18UIFocusEnvironment", "navigationBar"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
+- !private ["PSo18UIFocusEnvironment", "rootViewController"]
+- ["PSo18UIFocusEnvironment", "showColors"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo19UIGestureRecognizer", "enabled"]
+- !private ["CSo15UINavigationBar", "barTintColor"]
+- !private ["CSo22UINavigationController", "interactivePopGestureRecognizer"]
+- !private ["CSo22UINavigationController", "navigationBar"]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "Double"]
+- ["CSo11UIResponder", "GADBannerView"]
+- !private ["CSo11UIResponder", "GADRequest"]
+- ["CSo11UIResponder", "NSCoder"]
+- !private ["CSo11UIResponder", "NSTimer"]
+- !private ["CSo11UIResponder", "Selector"]
+- ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "UIView"]
+- !private ["CSo11UIResponder", "adUnitID"]
+- !private ["CSo11UIResponder", "automaticallyAdjustsScrollViewInsets"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- ["CSo11UIResponder", "bannerView"]
+- !private ["CSo11UIResponder", "barTintColor"]
+- ["CSo11UIResponder", "colorView"]
+- ["CSo11UIResponder", "colors"]
+- ["CSo11UIResponder", "delay"]
+- !private ["CSo11UIResponder", "fatalError"]
+- ["CSo11UIResponder", "index"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "interactivePopGestureRecognizer"]
+- !private ["CSo11UIResponder", "loadRequest"]
+- !private ["CSo11UIResponder", "navigationBar"]
+- !private ["CSo11UIResponder", "navigationController"]
+- !private ["CSo11UIResponder", "rootViewController"]
+- ["CSo11UIResponder", "showColors"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillAppear"]
+- !private ["PSo16UIStateRestoring", "GADRequest"]
+- !private ["PSo16UIStateRestoring", "NSTimer"]
+- !private ["PSo16UIStateRestoring", "Selector"]
+- !private ["PSo16UIStateRestoring", "automaticallyAdjustsScrollViewInsets"]
+- ["PSo16UIStateRestoring", "bannerView"]
+- ["PSo16UIStateRestoring", "colorView"]
+- ["PSo16UIStateRestoring", "colors"]
+- ["PSo16UIStateRestoring", "delay"]
+- !private ["PSo16UIStateRestoring", "fatalError"]
+- ["PSo16UIStateRestoring", "index"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "interactivePopGestureRecognizer"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
+- ["PSo16UIStateRestoring", "showColors"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "viewWillAppear"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "GADRequest"]
+- !private ["PSo18UITraitEnvironment", "NSTimer"]
+- !private ["PSo18UITraitEnvironment", "Selector"]
+- !private ["PSo18UITraitEnvironment", "adUnitID"]
+- !private ["PSo18UITraitEnvironment", "automaticallyAdjustsScrollViewInsets"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- ["PSo18UITraitEnvironment", "bannerView"]
+- !private ["PSo18UITraitEnvironment", "barTintColor"]
+- ["PSo18UITraitEnvironment", "colorView"]
+- ["PSo18UITraitEnvironment", "colors"]
+- ["PSo18UITraitEnvironment", "delay"]
+- !private ["PSo18UITraitEnvironment", "fatalError"]
+- ["PSo18UITraitEnvironment", "index"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "interactivePopGestureRecognizer"]
+- !private ["PSo18UITraitEnvironment", "loadRequest"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
+- !private ["PSo18UITraitEnvironment", "rootViewController"]
+- ["PSo18UITraitEnvironment", "showColors"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "viewWillAppear"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "adUnitID"]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "barTintColor"]
+- !private ["CSo6UIView", "loadRequest"]
+- !private ["CSo6UIView", "rootViewController"]
+- ["CSo16UIViewController", "Bool"]
+- ["CSo16UIViewController", "Double"]
+- ["CSo16UIViewController", "GADBannerView"]
+- !private ["CSo16UIViewController", "GADRequest"]
+- ["CSo16UIViewController", "NSCoder"]
+- !private ["CSo16UIViewController", "NSTimer"]
+- !private ["CSo16UIViewController", "Selector"]
+- ["CSo16UIViewController", "UIColor"]
+- ["CSo16UIViewController", "UIView"]
+- !private ["CSo16UIViewController", "automaticallyAdjustsScrollViewInsets"]
+- ["CSo16UIViewController", "bannerView"]
+- ["CSo16UIViewController", "colorView"]
+- ["CSo16UIViewController", "colors"]
+- ["CSo16UIViewController", "delay"]
+- !private ["CSo16UIViewController", "fatalError"]
+- ["CSo16UIViewController", "index"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "interactivePopGestureRecognizer"]
+- !private ["CSo16UIViewController", "navigationBar"]
+- !private ["CSo16UIViewController", "navigationController"]
+- ["CSo16UIViewController", "showColors"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillAppear"]
+- ["CSo16UIViewController", ""]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "count"]
+- !private ["PSs10_ArrayType", "subscript"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "count"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "count"]
+- !private ["PSs21_ObjectiveCBridgeable", "subscript"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "adUnitID"]
+- !private ["PSs12_Reflectable", "backgroundColor"]
+- !private ["PSs12_Reflectable", "barTintColor"]
+- !private ["PSs12_Reflectable", "count"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "loadRequest"]
+- !private ["PSs12_Reflectable", "rootViewController"]
+- !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
 - "PSs9AnyObject"
-- !private "V10ObjectiveC8Selector"
-- !private "VSs12StaticString"
-- "CSo16UIViewController"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs16ForwardIndexType"
+- !private "CSo13GADBannerView"
 - !private "CSo10GADRequest"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo7NSTimer"
+- !private "PSs21NilLiteralConvertible"
+- !private "Sq"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "V10ObjectiveC8Selector"
+- !private "PSs12SequenceType"
+- "C11StadiumShow24ShowColorsViewController"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "VSs12StaticString"
+- !private "PSs10Strideable"
+- !private "PSs24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
 - !private "CSo19UIGestureRecognizer"
-dynamic-lookup:
-cross-module:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Swift.swiftmodule"
+- !private "CSo15UINavigationBar"
+- !private "CSo22UINavigationController"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow-Bridging-Header.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/Popover/WEPopoverController.h"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/Security.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/CoreImage.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/Popover/WEPopoverContainerView.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/Popover/WETouchableView.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/ColorViewController.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/GzColors.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/ColorButton.h"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/32/CoreAudio.swiftmodule"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdReward.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdLoader.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPBannerView.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADMobileAds.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInterstitial.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADExtras.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRequestError.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADBannerView.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdSize.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "./GoogleMobileAds.framework/Headers/GADExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "./GoogleMobileAds.framework/Headers/GADRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "./GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreData.swiftmodule"
+interface-hash: "78cdf4e71e75f8b1f45aa0a45871f9b2"

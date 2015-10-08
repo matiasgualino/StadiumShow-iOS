@@ -95,26 +95,28 @@ const CGSize kLandscapeContentSize = { 160, 200 };
 -(void) createSimplyfiedOrdenatedColorsArray{
     self.colorCollection = [NSArray arrayWithObjects:
                             
-							@"0xFFcc0000",
-							@"0xFFffffff",
-							@"0xFF000000",
-							@"0xFF001eff",
-							@"0xFFfff000",
+						
+							
+							@"0xFF37FF00",
 							@"0xFF007F00",
-							@"0xFF33b5e5",
-							@"0xFF683c3f",
-							@"0xFFFCBEE8",
-							@"0xFFff8800",
-							@"0xFFaa66cc",
-							@"0xFF99cc00",
+							@"0xFF001eff",
+							@"0xFF00FFF2",
+							@"0xFFfff000",
 							@"0xFFffbb33",
+							@"0xFFFF803A",
+							@"0xFFff8800",
 							@"0xFFff4444",
 							@"0xFFff0000",
-							@"0xFF9933cc",
-							@"0xFFFF803A",
-							@"0xFF008630",
+							@"0xFFcc0000",
+							@"0xFF683c3f",
+							@"0xFFFCBEE8",
 							@"0xFFFE70F7",
-							@"0xFF888888", nil];
+							@"0xFFaa66cc",
+							@"0xFF9933cc",
+							@"0xFF888888",
+							@"0xFF404040",
+							@"0xFF000000",
+							@"0xFFffffff", nil];
 }
 
 

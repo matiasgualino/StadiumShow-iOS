@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F368B371BC469EA00E1032F /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F368B361BC469EA00E1032F /* GoogleMobileAds.framework */; };
 		0F4C0CCB1B9D24F20016EF74 /* ColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C0CA81B9D24F20016EF74 /* ColorButton.m */; };
 		0F4C0CCC1B9D24F20016EF74 /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4C0CAA1B9D24F20016EF74 /* ColorViewController.m */; };
 		0F4C0CCD1B9D24F20016EF74 /* ColorPopoverLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F4C0CAB1B9D24F20016EF74 /* ColorPopoverLocalizable.strings */; };
@@ -55,7 +56,6 @@
 		0FBA29411B8E8421008F1E2B /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBA293F1B8E8421008F1E2B /* AVKit.framework */; };
 		0FBA29441B8FC9B4008F1E2B /* FlashlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA29421B8FC9B4008F1E2B /* FlashlightTableViewCell.swift */; };
 		0FBA29451B8FC9B4008F1E2B /* FlashlightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FBA29431B8FC9B4008F1E2B /* FlashlightTableViewCell.xib */; };
-		36F72FF10D2272C7D4B3B246 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF2B47DC0F86EDD28F7E0EC /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F368B361BC469EA00E1032F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		0F4C0CA51B9D22BD0016EF74 /* StadiumShow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StadiumShow-Bridging-Header.h"; sourceTree = "<group>"; };
 		0F4C0CA71B9D24F20016EF74 /* ColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorButton.h; sourceTree = "<group>"; };
 		0F4C0CA81B9D24F20016EF74 /* ColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorButton.m; sourceTree = "<group>"; };
@@ -130,9 +131,6 @@
 		0FBA293F1B8E8421008F1E2B /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		0FBA29421B8FC9B4008F1E2B /* FlashlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashlightTableViewCell.swift; sourceTree = "<group>"; };
 		0FBA29431B8FC9B4008F1E2B /* FlashlightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlashlightTableViewCell.xib; sourceTree = "<group>"; };
-		289B2477C4364A5BFB5F4DC2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		2CF2B47DC0F86EDD28F7E0EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D857A76F43F764B109406FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +140,7 @@
 			files = (
 				0F7213C21B9DDE17004C84ED /* SystemConfiguration.framework in Frameworks */,
 				0F7213BE1B9DDE07004C84ED /* MessageUI.framework in Frameworks */,
+				0F368B371BC469EA00E1032F /* GoogleMobileAds.framework in Frameworks */,
 				0F7213BC1B9DDDFF004C84ED /* EventKitUI.framework in Frameworks */,
 				0F7213BA1B9DDDFA004C84ED /* EventKit.framework in Frameworks */,
 				0F7213B81B9DDDEE004C84ED /* CoreTelephony.framework in Frameworks */,
@@ -151,7 +150,6 @@
 				0F7213B21B9DDDCC004C84ED /* AudioToolbox.framework in Frameworks */,
 				0F7213B01B9DDDC7004C84ED /* AdSupport.framework in Frameworks */,
 				0FBA29411B8E8421008F1E2B /* AVKit.framework in Frameworks */,
-				36F72FF10D2272C7D4B3B246 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +222,7 @@
 		0FBA29051B8E7738008F1E2B = {
 			isa = PBXGroup;
 			children = (
+				0F368B361BC469EA00E1032F /* GoogleMobileAds.framework */,
 				0F4C0CA61B9D24F20016EF74 /* ColorPopover */,
 				0F4C0CA51B9D22BD0016EF74 /* StadiumShow-Bridging-Header.h */,
 				0FBA293E1B8E8421008F1E2B /* AVFoundation.framework */,
@@ -231,7 +230,6 @@
 				0FBA29101B8E7738008F1E2B /* StadiumShow */,
 				0FBA29291B8E7738008F1E2B /* StadiumShowTests */,
 				0FBA290F1B8E7738008F1E2B /* Products */,
-				6CF775112E5AF6C1E5CD36C1 /* Pods */,
 				D974D4C56D8502F732C37701 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -289,15 +287,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6CF775112E5AF6C1E5CD36C1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2D857A76F43F764B109406FF /* Pods.debug.xcconfig */,
-				289B2477C4364A5BFB5F4DC2 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		D974D4C56D8502F732C37701 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,7 +299,6 @@
 				0F7213B31B9DDDDD004C84ED /* CoreGraphics.framework */,
 				0F7213B11B9DDDCC004C84ED /* AudioToolbox.framework */,
 				0F7213AF1B9DDDC7004C84ED /* AdSupport.framework */,
-				2CF2B47DC0F86EDD28F7E0EC /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -322,11 +310,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FBA29301B8E7738008F1E2B /* Build configuration list for PBXNativeTarget "StadiumShow" */;
 			buildPhases = (
-				5827A432BDF8AC9EAC0B195B /* Check Pods Manifest.lock */,
 				0FBA290A1B8E7738008F1E2B /* Sources */,
 				0FBA290B1B8E7738008F1E2B /* Frameworks */,
 				0FBA290C1B8E7738008F1E2B /* Resources */,
-				3218A4B2256A14AA5855400A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,6 +347,7 @@
 		0FBA29061B8E7738008F1E2B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = StadiumShow;
 				TargetAttributes = {
@@ -439,39 +426,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3218A4B2256A14AA5855400A /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5827A432BDF8AC9EAC0B195B /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		0FBA290A1B8E7738008F1E2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -547,9 +501,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -566,10 +522,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OBJC_BRIDGING_HEADER = "StadiumShow-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -593,9 +550,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -606,9 +565,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OBJC_BRIDGING_HEADER = "StadiumShow-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -617,31 +578,47 @@
 		};
 		0FBA29311B8E7738008F1E2B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D857A76F43F764B109406FF /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = StadiumShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StadiumShow-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		0FBA29321B8E7738008F1E2B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 289B2477C4364A5BFB5F4DC2 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Emiliano Bertolini (3VBG4Z8RUB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Emiliano Bertolini (3VBG4Z8RUB)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = StadiumShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "StadiumShow-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

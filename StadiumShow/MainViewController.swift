@@ -23,7 +23,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	
 	var selectedColors : [UIColor]?
 	
-	var delay : Double = 0.0
+	var delay : Double = 1.0
 	var flashlightON = false
 	var device : AVCaptureDevice!
 	var running = false
@@ -41,6 +41,11 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		fatalError("init(coder:) has not been implemented")
 	}
 	
+	override func viewDidAppear(animated: Bool) {
+		self.view.backgroundColor = UIColor.whiteColor()
+		self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 		
@@ -49,6 +54,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		bannerView.loadRequest(GADRequest())
 		
 		setRightButtonInit()
+		setSegments()
+		
+		device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
 		
 		selectedColors = []
 		
@@ -68,64 +76,40 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 	
 	func setRightButtonInit() {
-		var btnContinue = UIBarButtonItem(title: "Iniciar", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("initializeShow"))
-		btnContinue.enabled = true
-		btnContinue.tintColor = UIColor.blueColor()
-		self.navigationItem.rightBarButtonItem = btnContinue
-		if flashlightON || (self.selectedColors != nil && self.selectedColors!.count > 0) {
-			self.navigationItem.rightBarButtonItem?.enabled = true
+		if flashlightON {
+			self.navigationItem.rightBarButtonItem = nil
 		} else {
-			self.navigationItem.rightBarButtonItem?.enabled = false
+			let btnContinue = UIBarButtonItem(title: "Iniciar", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("initializeShow"))
+			btnContinue.enabled = true
+			btnContinue.tintColor = UIColor.blueColor()
+			self.navigationItem.rightBarButtonItem = btnContinue
+			if (self.selectedColors != nil && self.selectedColors!.count > 0) {
+				self.navigationItem.rightBarButtonItem?.enabled = true
+			} else {
+				self.navigationItem.rightBarButtonItem?.enabled = false
+			}
 		}
 	}
 	
-	func setRightButtonFinish() {
-		var btnContinue = UIBarButtonItem(title: "Finalizar", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("finishShow"))
-		btnContinue.enabled = true
-		btnContinue.tintColor = UIColor.blueColor()
-		self.navigationItem.rightBarButtonItem = btnContinue
-	}
-	
 	func delayChanged() {
-		var phi = flashlightON ? 0.8 : 0.3
+		let phi = flashlightON ? 1 : 0.5
 		let pot = phi * Double(self.delaySegmented.selectedSegmentIndex)
 		self.delay = pow(2.7183, -pot)
 		if self.flashlightON {
-			if self.delaySegmented.selectedSegmentIndex == 0 && showInitialized {
+			if self.delaySegmented.selectedSegmentIndex == 0 {
 					timer?.invalidate()
 					running = false
 					changeFlash()
 			} else {
-/*				if self.delaySegmented.selectedSegmentIndex == 4 {
-					self.delay = self.delay/50
-				}*/
-				if showInitialized {
-					timer?.invalidate()
-					timer = NSTimer.scheduledTimerWithTimeInterval(self.delay, target: self, selector: Selector("changeFlash"), userInfo: nil, repeats: true)
-				}
+				timer?.invalidate()
+				timer = NSTimer.scheduledTimerWithTimeInterval(self.delay, target: self, selector: Selector("changeFlash"), userInfo: nil, repeats: true)
 			}
 		}
 	}
 	
 	func initializeShow() {
 		showInitialized = true
-		if self.flashlightON {
-			device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
-			if device.torchMode == AVCaptureTorchMode.Off {
-				setRightButtonFinish()
-				if self.delay == 0.0 {
-					changeFlash()
-				} else {
-					timer?.invalidate()
-					timer = NSTimer.scheduledTimerWithTimeInterval(self.delay, target: self, selector: Selector("changeFlash"), userInfo: nil, repeats: true)
-				}
-			} else {
-				/*			AVSession?.stopRunning()
-				AVSession = nil*/
-			}
-		} else {
-			self.navigationController?.pushViewController(ShowColorsViewController(colors: selectedColors!, delay: self.delay), animated: true)
-		}
+		self.navigationController?.pushViewController(ShowColorsViewController(colors: selectedColors!, delay: self.delay), animated: true)
 	}
 	
 	func finishShow() {
@@ -134,6 +118,14 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 		timer?.invalidate()
 		self.running = false
 		self.AVSession?.stopRunning()
+		do {
+			try device.lockForConfiguration()
+			device.torchMode = AVCaptureTorchMode.Off
+			device.unlockForConfiguration()
+		} catch {
+			
+		}
+		
 	}
 	
 	func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -175,7 +167,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		if indexPath.section == 0 {
-			var flashlightCell = (self.tableView.dequeueReusableCellWithIdentifier("FlashlightTableViewCell") as? FlashlightTableViewCell)!
+			let flashlightCell = (self.tableView.dequeueReusableCellWithIdentifier("FlashlightTableViewCell") as? FlashlightTableViewCell)!
 			flashlightCell.flashlightDelegate = self
 			if flashlightON {
 				return flashlightCell
@@ -183,7 +175,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 				if indexPath.row == 0 {
 					return flashlightCell
 				} else if indexPath.row == 1 {
-					var cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "SelectColor")
+					let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "SelectColor")
 					cell.textLabel?.text = "Seleccionar colores"
 					cell.textLabel?.font = UIFont(name: "HelveticaNeue", size: 15.0)
 					cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
@@ -191,7 +183,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 				}
 			}
 		} else {
-			var cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "SelectedColor")
+			let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "SelectedColor")
 			cell.backgroundColor = selectedColors![indexPath.row]
 			cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
 			return cell
@@ -202,13 +194,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 		if indexPath.section == 0 && indexPath.row == 1 {
 			if self.wePopoverController == nil {
-				var contentViewController : ColorViewController = ColorViewController()
+				let contentViewController : ColorViewController = ColorViewController()
 				contentViewController.delegate = self
 				self.wePopoverController = WEPopoverController(contentViewController: contentViewController)
 				self.wePopoverController!.delegate = self
 				self.wePopoverController!.passthroughViews = NSArray(objects: self.navigationController!.navigationBar) as [AnyObject]
 				
-				self.wePopoverController?.presentPopoverFromRect(CGRectMake((self.view.frame.size.width / 2.0) - 50, 144, 100, 100), inView: self.view, permittedArrowDirections: (UIPopoverArrowDirection.Up|UIPopoverArrowDirection.Down), animated: true)
+				self.wePopoverController?.presentPopoverFromRect(CGRectMake((self.view.frame.size.width / 2.0) - 50, 144, 100, 100), inView: self.view, permittedArrowDirections: [UIPopoverArrowDirection.Up, UIPopoverArrowDirection.Down], animated: true)
 			} else {
 				self.wePopoverController?.dismissPopoverAnimated(true)
 				self.wePopoverController = nil;
@@ -230,56 +222,99 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 	
 	func notifyFlashlight(active: Bool) {
 		self.flashlightON = active
-		if active || (self.selectedColors != nil && self.selectedColors!.count > 0) {
-			self.navigationItem.rightBarButtonItem?.enabled = true
-		} else {
-			self.navigationItem.rightBarButtonItem?.enabled = false
+		setRightButtonInit()
+		setSegments()
+		self.delaySegmented.selectedSegmentIndex = 0
+		delayChanged()
+		if !flashlightON {
+			finishShow()
 		}
-		if self.flashlightON {
+		
+		
+		/*
+		if !flashlightON || (self.selectedColors != nil && self.selectedColors!.count > 0) {
+			self.navigationItem.rightBarButtonItem?.enabled = false
+			delayChanged()
+			finishShow()
+		} else {
 			if self.delaySegmented.selectedSegmentIndex == 0 {
 				self.delay = 0.0
 			} else if self.delaySegmented.selectedSegmentIndex == 4 {
 				self.delay = self.delay/50
 			}
-		} else {
-			delayChanged()
-			finishShow()
+			self.navigationItem.rightBarButtonItem?.enabled = true
 		}
+*/
 		self.tableView.reloadData()
 	}
 	
+	func setSegments() {
+		self.delaySegmented.removeAllSegments()
+		if self.flashlightON {
+			self.delaySegmented.removeAllSegments()
+			self.delaySegmented.insertSegmentWithTitle("ON", atIndex: 0, animated: true)
+			self.delaySegmented.insertSegmentWithTitle("1", atIndex: 1, animated: true)
+			self.delaySegmented.insertSegmentWithTitle("2", atIndex: 2, animated: true)
+			self.delaySegmented.insertSegmentWithTitle("3", atIndex: 3, animated: true)
+			self.delaySegmented.insertSegmentWithTitle("4", atIndex: 4, animated: true)
+		} else {
+			self.delaySegmented.insertSegmentWithTitle("1", atIndex: 0, animated: true)
+			self.delaySegmented.insertSegmentWithTitle("2", atIndex: 1, animated: true)
+			self.delaySegmented.insertSegmentWithTitle("3", atIndex: 2, animated: true)
+			self.delaySegmented.insertSegmentWithTitle("4", atIndex: 3, animated: true)
+			self.delaySegmented.insertSegmentWithTitle("5", atIndex: 4, animated: true)
+		}
+	}
+	
 	func createSessionFlashLight() {
-		var session : AVCaptureSession = AVCaptureSession()
-		var input : AVCaptureDeviceInput? = AVCaptureDeviceInput.deviceInputWithDevice(device, error: nil) as? AVCaptureDeviceInput
-		session.addInput(input)
-		
-		var output : AVCaptureVideoDataOutput = AVCaptureVideoDataOutput()
-		session.addOutput(output)
-		
-		session.beginConfiguration()
-		device.lockForConfiguration(nil)
-		
-		device.torchMode = AVCaptureTorchMode.On
-		device.flashMode = AVCaptureFlashMode.On
-		
-		device.setTorchModeOnWithLevel(1.0, error: nil)
-		
-		device.unlockForConfiguration()
-		session.commitConfiguration()
-		
-		session.startRunning()
-		
-		AVSession = session
+		do {
+			let session : AVCaptureSession = AVCaptureSession()
+			let input : AVCaptureDeviceInput = try AVCaptureDeviceInput(device: device)
+			session.addInput(input)
+			
+			let output : AVCaptureVideoDataOutput = AVCaptureVideoDataOutput()
+			session.addOutput(output)
+			
+			session.beginConfiguration()
+			try device.lockForConfiguration()
+			
+			device.torchMode = AVCaptureTorchMode.On
+			
+			try device.setTorchModeOnWithLevel(1.0)
+			
+			device.unlockForConfiguration()
+			session.commitConfiguration()
+			
+			session.startRunning()
+			
+			AVSession = session
+		} catch {
+			
+		}
 	}
 
 	func changeFlash() {
-		if self.running {
+		do {
+			device = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+			if device.hasTorch {
+				try device.lockForConfiguration()
+				device.torchMode = self.running ? AVCaptureTorchMode.Off : AVCaptureTorchMode.On
+				device.unlockForConfiguration()
+			}
+		} catch {
+			
+		}
+		self.running = !self.running
+		
+		
+		
+/*		if self.running {
 			self.running = false
-			self.AVSession!.stopRunning()
+			self.AVSession?.stopRunning()
 		} else {
 			createSessionFlashLight()
 			self.running = true
-		}
+		}*/
 	}
 	
 	func colorPopoverControllerDidSelectColor(hexColor: String!) {

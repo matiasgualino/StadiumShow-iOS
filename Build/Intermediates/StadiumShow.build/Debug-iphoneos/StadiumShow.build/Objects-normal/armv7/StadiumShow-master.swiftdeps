@@ -1,7 +1,8 @@
-version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
-options: "281bcbc8cd9da09be4ddc7ec6d44abfe"
-inputs: 
-- "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/MainViewController.swift"
-- "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/ShowColorsViewController.swift"
-- "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/FlashlightTableViewCell.swift"
-- "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/AppDelegate.swift"
+version: "Apple Swift version 2.1 (swiftlang-700.1.100.4 clang-700.1.75)"
+options: "e15063de7fad9dd1385c3b8926ad110d"
+build_time: [497505060, 382527000]
+inputs:
+  "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/ShowColorsViewController.swift": [497494418, 0]
+  "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/FlashlightTableViewCell.swift": [495337881, 0]
+  "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/MainViewController.swift": [497505057, 0]
+  "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow/AppDelegate.swift": [497474630, 0]

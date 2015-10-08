@@ -4,10 +4,12 @@
 <dict>
 	<key>application-identifier</key>
 	<string>3VBG4Z8RUB.com.mgualino.StadiumShow</string>
+	<key>beta-reports-active</key>
+	<true/>
 	<key>com.apple.developer.team-identifier</key>
 	<string>3VBG4Z8RUB</string>
 	<key>get-task-allow</key>
-	<true/>
+	<false/>
 	<key>keychain-access-groups</key>
 	<array>
 		<string>3VBG4Z8RUB.com.mgualino.StadiumShow</string>

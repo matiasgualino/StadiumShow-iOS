@@ -1,195 +1,539 @@
 ### Swift dependencies file v0 ###
-provides:
+provides-top-level:
 - "AppDelegate"
-nominals:
+provides-nominal:
 - "C11StadiumShow11AppDelegate"
-class-members:
-- "saveContext"
-- "applicationDidBecomeActive"
-- "applicationWillTerminate"
-- "applicationDocumentsDirectory"
-- "persistentStoreCoordinator"
-- "applicationWillEnterForeground"
-- "managedObjectModel"
-- "applicationDidEnterBackground"
+provides-member:
+- ["C11StadiumShow11AppDelegate", ""]
+provides-dynamic-lookup:
 - "application"
-- "managedObjectContext"
 - "window"
-- "applicationWillResignActive"
-top-level:
-- "UIApplicationDelegate"
-- "NSURL"
-- !private "=="
-- !private "NSForegroundColorAttributeName"
-- !private "NSLog"
-- !private "-"
-- !private "UIColor"
-- "NSManagedObjectModel"
-- "UIApplication"
-- !private "&&"
-- !private "NSUnderlyingErrorKey"
-- !private "!"
-- !private "NSSQLiteStoreType"
-- !private "UINavigationController"
-- !private "NSBundle"
-- !private "NSLocalizedFailureReasonErrorKey"
-- !private "MainViewController"
-- !private "abort"
-- "NSPersistentStoreCoordinator"
-- "AnyObject"
-- !private "BooleanLiteralType"
+depends-top-level:
 - !private "UIScreen"
+- !private "NSForegroundColorAttributeName"
+- !private "UIColor"
 - "UIResponder"
+- "UIApplication"
+- !private "BooleanLiteralType"
+- "AppDelegate"
 - !private "Dictionary"
-- !private "NSFileManager"
-- "NSManagedObjectContext"
-- !private "String"
-- "NSObject"
-- !private "NSLocalizedDescriptionKey"
-- "UIWindow"
-- !private "NSError"
 - "Bool"
-- "StringLiteralType"
-member-access:
-- !private "PSs16ForwardIndexType"
-- !private "PSs14DebugPrintable"
-- !private "CSo6UIView"
-- !private "CSo8UIWindow"
-- !private "C11StadiumShow18MainViewController"
-- !private "PSs22_RandomAccessIndexType"
-- !private "PSs21BitwiseOperationsType"
-- !private "PSs17_SignedNumberType"
-- !private "VSs6UInt16"
-- !private "PSs11IntegerType"
-- !private "CSo16UIViewController"
-- !private "CSo8NSString"
-- !private "PSs28DictionaryLiteralConvertible"
-- !private "PSs12_IntegerType"
-- !private "PSs21IntegerArithmeticType"
-- !private "PSs10Strideable"
-- !private "CSo5NSURL"
-- !private "VSs5UInt8"
-- !private "Sd"
-- !private "PSs10Comparable"
-- "C11StadiumShow11AppDelegate"
-- !private "CSo8NSBundle"
+- !private "UINavigationController"
+- !private "MainViewController"
+- "UIWindow"
+- "NSObject"
+- "AnyObject"
+- "UIApplicationDelegate"
+depends-member:
+- !private ["PSs9AnyObject", "MainViewController"]
+- !private ["PSs9AnyObject", "NSForegroundColorAttributeName"]
+- !private ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "UINavigationController"]
+- !private ["PSs9AnyObject", "UIScreen"]
+- !private ["PSs9AnyObject", "UIWindow"]
+- ["PSs9AnyObject", "application"]
+- ["PSs9AnyObject", "applicationDidBecomeActive"]
+- ["PSs9AnyObject", "applicationDidEnterBackground"]
+- ["PSs9AnyObject", "applicationDidFinishLaunching"]
+- ["PSs9AnyObject", "applicationDidReceiveMemoryWarning"]
+- ["PSs9AnyObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9AnyObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9AnyObject", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9AnyObject", "applicationSignificantTimeChange"]
+- ["PSs9AnyObject", "applicationWillEnterForeground"]
+- ["PSs9AnyObject", "applicationWillResignActive"]
+- ["PSs9AnyObject", "applicationWillTerminate"]
+- !private ["PSs9AnyObject", "bounds"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "mainScreen"]
+- !private ["PSs9AnyObject", "makeKeyAndVisible"]
+- !private ["PSs9AnyObject", "navigationBar"]
+- !private ["PSs9AnyObject", "rootViewController"]
+- !private ["PSs9AnyObject", "tintColor"]
+- !private ["PSs9AnyObject", "titleTextAttributes"]
+- !private ["PSs9AnyObject", "whiteColor"]
+- ["PSs9AnyObject", "window"]
+- ["PSs9AnyObject", ""]
+- ["C11StadiumShow11AppDelegate", "AnyObject"]
+- ["C11StadiumShow11AppDelegate", "Bool"]
+- !private ["C11StadiumShow11AppDelegate", "MainViewController"]
+- !private ["C11StadiumShow11AppDelegate", "NSForegroundColorAttributeName"]
+- ["C11StadiumShow11AppDelegate", "NSObject"]
+- ["C11StadiumShow11AppDelegate", "UIApplication"]
+- !private ["C11StadiumShow11AppDelegate", "UIColor"]
+- !private ["C11StadiumShow11AppDelegate", "UINavigationController"]
+- !private ["C11StadiumShow11AppDelegate", "UIScreen"]
+- ["C11StadiumShow11AppDelegate", "UIWindow"]
+- ["C11StadiumShow11AppDelegate", "application"]
+- ["C11StadiumShow11AppDelegate", "applicationDidBecomeActive"]
+- ["C11StadiumShow11AppDelegate", "applicationDidEnterBackground"]
+- ["C11StadiumShow11AppDelegate", "applicationDidFinishLaunching"]
+- ["C11StadiumShow11AppDelegate", "applicationDidReceiveMemoryWarning"]
+- ["C11StadiumShow11AppDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["C11StadiumShow11AppDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["C11StadiumShow11AppDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["C11StadiumShow11AppDelegate", "applicationSignificantTimeChange"]
+- ["C11StadiumShow11AppDelegate", "applicationWillEnterForeground"]
+- ["C11StadiumShow11AppDelegate", "applicationWillResignActive"]
+- ["C11StadiumShow11AppDelegate", "applicationWillTerminate"]
+- ["C11StadiumShow11AppDelegate", "deinit"]
+- ["C11StadiumShow11AppDelegate", "init"]
+- ["C11StadiumShow11AppDelegate", "window"]
+- !private ["PSs11CVarArgType", "MainViewController"]
+- !private ["PSs11CVarArgType", "NSForegroundColorAttributeName"]
+- !private ["PSs11CVarArgType", "UIColor"]
+- !private ["PSs11CVarArgType", "UINavigationController"]
+- !private ["PSs11CVarArgType", "UIScreen"]
+- !private ["PSs11CVarArgType", "UIWindow"]
+- ["PSs11CVarArgType", "application"]
+- ["PSs11CVarArgType", "applicationDidBecomeActive"]
+- ["PSs11CVarArgType", "applicationDidEnterBackground"]
+- ["PSs11CVarArgType", "applicationDidFinishLaunching"]
+- ["PSs11CVarArgType", "applicationDidReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs11CVarArgType", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs11CVarArgType", "applicationShouldRequestHealthAuthorization"]
+- ["PSs11CVarArgType", "applicationSignificantTimeChange"]
+- ["PSs11CVarArgType", "applicationWillEnterForeground"]
+- ["PSs11CVarArgType", "applicationWillResignActive"]
+- ["PSs11CVarArgType", "applicationWillTerminate"]
+- !private ["PSs11CVarArgType", "bounds"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "mainScreen"]
+- !private ["PSs11CVarArgType", "makeKeyAndVisible"]
+- !private ["PSs11CVarArgType", "navigationBar"]
+- !private ["PSs11CVarArgType", "rootViewController"]
+- !private ["PSs11CVarArgType", "tintColor"]
+- !private ["PSs11CVarArgType", "titleTextAttributes"]
+- !private ["PSs11CVarArgType", "whiteColor"]
+- ["PSs11CVarArgType", "window"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "Value"]
+- !private ["PSo27ColorViewControllerDelegate", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "MainViewController"]
+- !private ["PSs23CustomStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "UINavigationController"]
+- !private ["PSs23CustomStringConvertible", "UIScreen"]
+- !private ["PSs23CustomStringConvertible", "UIWindow"]
+- !private ["PSs23CustomStringConvertible", "Value"]
+- ["PSs23CustomStringConvertible", "application"]
+- ["PSs23CustomStringConvertible", "applicationDidBecomeActive"]
+- ["PSs23CustomStringConvertible", "applicationDidEnterBackground"]
+- ["PSs23CustomStringConvertible", "applicationDidFinishLaunching"]
+- ["PSs23CustomStringConvertible", "applicationDidReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs23CustomStringConvertible", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs23CustomStringConvertible", "applicationShouldRequestHealthAuthorization"]
+- ["PSs23CustomStringConvertible", "applicationSignificantTimeChange"]
+- ["PSs23CustomStringConvertible", "applicationWillEnterForeground"]
+- ["PSs23CustomStringConvertible", "applicationWillResignActive"]
+- ["PSs23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["PSs23CustomStringConvertible", "bounds"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "mainScreen"]
+- !private ["PSs23CustomStringConvertible", "makeKeyAndVisible"]
+- !private ["PSs23CustomStringConvertible", "navigationBar"]
+- !private ["PSs23CustomStringConvertible", "rootViewController"]
+- !private ["PSs23CustomStringConvertible", "tintColor"]
+- !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
+- !private ["PSs23CustomStringConvertible", "whiteColor"]
+- ["PSs23CustomStringConvertible", "window"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
+- !private ["PSs9Equatable", "MainViewController"]
+- !private ["PSs9Equatable", "NSForegroundColorAttributeName"]
+- !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "UINavigationController"]
+- !private ["PSs9Equatable", "UIScreen"]
+- !private ["PSs9Equatable", "UIWindow"]
+- ["PSs9Equatable", "application"]
+- ["PSs9Equatable", "applicationDidBecomeActive"]
+- ["PSs9Equatable", "applicationDidEnterBackground"]
+- ["PSs9Equatable", "applicationDidFinishLaunching"]
+- ["PSs9Equatable", "applicationDidReceiveMemoryWarning"]
+- ["PSs9Equatable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs9Equatable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs9Equatable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs9Equatable", "applicationSignificantTimeChange"]
+- ["PSs9Equatable", "applicationWillEnterForeground"]
+- ["PSs9Equatable", "applicationWillResignActive"]
+- ["PSs9Equatable", "applicationWillTerminate"]
+- !private ["PSs9Equatable", "bounds"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "mainScreen"]
+- !private ["PSs9Equatable", "makeKeyAndVisible"]
+- !private ["PSs9Equatable", "navigationBar"]
+- !private ["PSs9Equatable", "rootViewController"]
+- !private ["PSs9Equatable", "tintColor"]
+- !private ["PSs9Equatable", "titleTextAttributes"]
+- !private ["PSs9Equatable", "whiteColor"]
+- ["PSs9Equatable", "window"]
+- ["PSs9Equatable", ""]
+- !private ["P11StadiumShow18FlashlightDelegate", "init"]
+- !private ["PSs8Hashable", "MainViewController"]
+- !private ["PSs8Hashable", "NSForegroundColorAttributeName"]
+- !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "UINavigationController"]
+- !private ["PSs8Hashable", "UIScreen"]
+- !private ["PSs8Hashable", "UIWindow"]
+- ["PSs8Hashable", "application"]
+- ["PSs8Hashable", "applicationDidBecomeActive"]
+- ["PSs8Hashable", "applicationDidEnterBackground"]
+- ["PSs8Hashable", "applicationDidFinishLaunching"]
+- ["PSs8Hashable", "applicationDidReceiveMemoryWarning"]
+- ["PSs8Hashable", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSs8Hashable", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSs8Hashable", "applicationShouldRequestHealthAuthorization"]
+- ["PSs8Hashable", "applicationSignificantTimeChange"]
+- ["PSs8Hashable", "applicationWillEnterForeground"]
+- ["PSs8Hashable", "applicationWillResignActive"]
+- ["PSs8Hashable", "applicationWillTerminate"]
+- !private ["PSs8Hashable", "bounds"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "mainScreen"]
+- !private ["PSs8Hashable", "makeKeyAndVisible"]
+- !private ["PSs8Hashable", "navigationBar"]
+- !private ["PSs8Hashable", "rootViewController"]
+- !private ["PSs8Hashable", "tintColor"]
+- !private ["PSs8Hashable", "titleTextAttributes"]
+- !private ["PSs8Hashable", "whiteColor"]
+- ["PSs8Hashable", "window"]
+- ["PSs8Hashable", ""]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "Value"]
+- !private ["C11StadiumShow18MainViewController", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "makeKeyAndVisible"]
+- !private ["PSo8NSCoding", "navigationBar"]
+- !private ["PSo8NSCoding", "rootViewController"]
+- !private ["PSo8NSCoding", "tintColor"]
+- !private ["PSo8NSCoding", "titleTextAttributes"]
+- !private ["PSo8NSCoding", "whiteColor"]
+- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "MainViewController"]
+- !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
+- ["CSo8NSObject", "NSObject"]
+- ["CSo8NSObject", "UIApplication"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UINavigationController"]
+- !private ["CSo8NSObject", "UIScreen"]
+- ["CSo8NSObject", "UIWindow"]
+- ["CSo8NSObject", "application"]
+- ["CSo8NSObject", "applicationDidBecomeActive"]
+- ["CSo8NSObject", "applicationDidEnterBackground"]
+- ["CSo8NSObject", "applicationDidFinishLaunching"]
+- ["CSo8NSObject", "applicationDidReceiveMemoryWarning"]
+- ["CSo8NSObject", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo8NSObject", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo8NSObject", "applicationShouldRequestHealthAuthorization"]
+- ["CSo8NSObject", "applicationSignificantTimeChange"]
+- ["CSo8NSObject", "applicationWillEnterForeground"]
+- ["CSo8NSObject", "applicationWillResignActive"]
+- ["CSo8NSObject", "applicationWillTerminate"]
+- !private ["CSo8NSObject", "bounds"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "mainScreen"]
+- !private ["CSo8NSObject", "makeKeyAndVisible"]
+- !private ["CSo8NSObject", "navigationBar"]
+- !private ["CSo8NSObject", "rootViewController"]
+- !private ["CSo8NSObject", "tintColor"]
+- !private ["CSo8NSObject", "titleTextAttributes"]
+- !private ["CSo8NSObject", "whiteColor"]
+- ["CSo8NSObject", "window"]
+- !private ["PSo16NSObjectProtocol", "MainViewController"]
+- !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UINavigationController"]
+- !private ["PSo16NSObjectProtocol", "UIScreen"]
+- !private ["PSo16NSObjectProtocol", "UIWindow"]
+- ["PSo16NSObjectProtocol", "application"]
+- ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
+- ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
+- ["PSo16NSObjectProtocol", "applicationDidFinishLaunching"]
+- ["PSo16NSObjectProtocol", "applicationDidReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo16NSObjectProtocol", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo16NSObjectProtocol", "applicationShouldRequestHealthAuthorization"]
+- ["PSo16NSObjectProtocol", "applicationSignificantTimeChange"]
+- ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
+- ["PSo16NSObjectProtocol", "applicationWillResignActive"]
+- ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "mainScreen"]
+- !private ["PSo16NSObjectProtocol", "makeKeyAndVisible"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
+- !private ["PSo16NSObjectProtocol", "rootViewController"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
+- !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- ["PSo16NSObjectProtocol", "window"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["Sq", "deinit"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "Value"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "makeKeyAndVisible"]
+- !private ["PSo29UIAccessibilityIdentification", "rootViewController"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "makeKeyAndVisible"]
+- !private ["PSo12UIAppearance", "rootViewController"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo12UIAppearance", "titleTextAttributes"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "makeKeyAndVisible"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
+- !private ["PSo21UIAppearanceContainer", "rootViewController"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
+- !private ["PSo21UIApplicationDelegate", "MainViewController"]
+- !private ["PSo21UIApplicationDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo21UIApplicationDelegate", "UIColor"]
+- !private ["PSo21UIApplicationDelegate", "UINavigationController"]
+- !private ["PSo21UIApplicationDelegate", "UIScreen"]
+- !private ["PSo21UIApplicationDelegate", "UIWindow"]
+- ["PSo21UIApplicationDelegate", "application"]
+- ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
+- ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
+- ["PSo21UIApplicationDelegate", "applicationDidFinishLaunching"]
+- ["PSo21UIApplicationDelegate", "applicationDidReceiveMemoryWarning"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo21UIApplicationDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo21UIApplicationDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["PSo21UIApplicationDelegate", "applicationSignificantTimeChange"]
+- ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
+- ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
+- ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- ["PSo21UIApplicationDelegate", "window"]
+- ["PSo21UIApplicationDelegate", ""]
+- !private ["PSo16UIBarPositioning", "tintColor"]
+- !private ["PSo16UIBarPositioning", "titleTextAttributes"]
+- !private ["CSo7UIColor", "whiteColor"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "makeKeyAndVisible"]
+- !private ["PSo17UICoordinateSpace", "rootViewController"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "makeKeyAndVisible"]
+- !private ["PSo13UIDynamicItem", "rootViewController"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo13UIDynamicItem", "titleTextAttributes"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "makeKeyAndVisible"]
+- !private ["PSo18UIFocusEnvironment", "navigationBar"]
+- !private ["PSo18UIFocusEnvironment", "rootViewController"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
+- !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
+- !private ["CSo15UINavigationBar", "tintColor"]
+- !private ["CSo15UINavigationBar", "titleTextAttributes"]
+- !private ["CSo22UINavigationController", "init"]
+- !private ["CSo22UINavigationController", "navigationBar"]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "MainViewController"]
+- !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
+- ["CSo11UIResponder", "NSObject"]
+- ["CSo11UIResponder", "UIApplication"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UINavigationController"]
+- !private ["CSo11UIResponder", "UIScreen"]
+- ["CSo11UIResponder", "UIWindow"]
+- ["CSo11UIResponder", "application"]
+- ["CSo11UIResponder", "applicationDidBecomeActive"]
+- ["CSo11UIResponder", "applicationDidEnterBackground"]
+- ["CSo11UIResponder", "applicationDidFinishLaunching"]
+- ["CSo11UIResponder", "applicationDidReceiveMemoryWarning"]
+- ["CSo11UIResponder", "applicationProtectedDataDidBecomeAvailable"]
+- ["CSo11UIResponder", "applicationProtectedDataWillBecomeUnavailable"]
+- ["CSo11UIResponder", "applicationShouldRequestHealthAuthorization"]
+- ["CSo11UIResponder", "applicationSignificantTimeChange"]
+- ["CSo11UIResponder", "applicationWillEnterForeground"]
+- ["CSo11UIResponder", "applicationWillResignActive"]
+- ["CSo11UIResponder", "applicationWillTerminate"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "makeKeyAndVisible"]
+- !private ["CSo11UIResponder", "navigationBar"]
+- !private ["CSo11UIResponder", "rootViewController"]
+- !private ["CSo11UIResponder", "tintColor"]
+- !private ["CSo11UIResponder", "titleTextAttributes"]
+- ["CSo11UIResponder", "window"]
+- ["CSo11UIResponder", ""]
+- !private ["CSo8UIScreen", "bounds"]
+- !private ["CSo8UIScreen", "mainScreen"]
+- !private ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
+- !private ["PSo21UITableViewDataSource", "init"]
+- !private ["PSo19UITableViewDelegate", "init"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "mainScreen"]
+- !private ["PSo18UITraitEnvironment", "makeKeyAndVisible"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
+- !private ["PSo18UITraitEnvironment", "rootViewController"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "makeKeyAndVisible"]
+- !private ["CSo6UIView", "rootViewController"]
+- !private ["CSo6UIView", "tintColor"]
+- !private ["CSo6UIView", "titleTextAttributes"]
+- !private ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationBar"]
+- !private ["CSo8UIWindow", "init"]
+- !private ["CSo8UIWindow", "makeKeyAndVisible"]
+- !private ["CSo8UIWindow", "rootViewController"]
+- !private ["PSo27WEPopoverControllerDelegate", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "whiteColor"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
+- !private ["PSs12_Reflectable", "Key"]
+- !private ["PSs12_Reflectable", "Value"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "makeKeyAndVisible"]
+- !private ["PSs12_Reflectable", "rootViewController"]
+- !private ["PSs12_Reflectable", "tintColor"]
+- !private ["PSs12_Reflectable", "titleTextAttributes"]
+depends-nominal:
 - "PSs9AnyObject"
-- !private "CSo7NSError"
-- !private "CSo28NSPersistentStoreCoordinator"
-- !private "Sq"
-- !private "OSC21NSSearchPathDirectory"
-- !private "PSs21RandomAccessIndexType"
-- "CSo11UIResponder"
-- !private "PSs11_Comparable"
-- !private "CSo13NSFileManager"
-- !private "PSs17SignedIntegerType"
-- !private "PSs11CVarArgType"
-- !private "VSs9Character"
-- !private "PSs14_Incrementable"
-- !private "Si"
-- !private "VSs6UInt32"
-- !private "Su"
-- !private "PSs9Equatable"
-- !private "PSs33_BuiltinIntegerLiteralConvertible"
-- !private "VSC22NSSearchPathDomainMask"
-- !private "PSs12SequenceType"
-- !private "PSs11Reflectable"
-- !private "VSs26_OptionalNilComparisonType"
-- "CSo8NSObject"
-- !private "PSs8Hashable"
-- !private "VSs5Int64"
-- !private "VSs6UInt64"
-- !private "PSs14_Sequence_Type"
+- "C11StadiumShow11AppDelegate"
+- "PSs11CVarArgType"
 - !private "PSs14CollectionType"
-- !private "CSo22UINavigationController"
-- !private "PSs16SignedNumberType"
-- !private "Sf"
-- !private "PSs22_IntegerArithmeticType"
-- !private "PSs22BidirectionalIndexType"
+- !private "PSo27ColorViewControllerDelegate"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
 - !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- "PSs9Equatable"
+- !private "P11StadiumShow18FlashlightDelegate"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "C11StadiumShow18MainViewController"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "Sq"
+- !private "PSs12SequenceType"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
 - "PSo21UIApplicationDelegate"
-- !private "VSs4Int8"
-- !private "CSo20NSManagedObjectModel"
-- !private "VSs5Int32"
-- !private "Sc"
-- !private "PSs9Printable"
-- !private "PSs17_ForwardIndexType"
+- !private "PSo16UIBarPositioning"
 - !private "CSo7UIColor"
-- !private "Sa"
-- !private "CSo22NSManagedObjectContext"
-- !private "VSs5Range"
-- !private "PSs11_Strideable"
-- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
 - !private "CSo15UINavigationBar"
-- !private "PSs18_SignedIntegerType"
-- !private "PSs13_SequenceType"
-- !private "PSs23_BidirectionalIndexType"
-- !private "Sb"
-- !private "PSs15_CollectionType"
-- !private "PSs25IntegerLiteralConvertible"
-- !private "VSs5Int16"
+- !private "CSo22UINavigationController"
+- "CSo11UIResponder"
 - !private "CSo8UIScreen"
-- !private "SS"
-dynamic-lookup:
-cross-module:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Swift.swiftmodule"
+- !private "PSo20UIScrollViewDelegate"
+- !private "PSo16UIStateRestoring"
+- !private "PSo21UITableViewDataSource"
+- !private "PSo19UITableViewDelegate"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "CSo16UIViewController"
+- !private "CSo8UIWindow"
+- !private "PSo27WEPopoverControllerDelegate"
+- !private "PSs24_ColorLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShow-Bridging-Header.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/Popover/WEPopoverController.h"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/Security.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreImage.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/Popover/WEPopoverContainerView.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/Popover/WETouchableView.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/ColorViewController.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/GzColors.h"
 - "/Users/mgualino/Desktop/Development/StadiumShow/./ColorPopover/ColorButton.h"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/CoreAudio.swiftmodule"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdReward.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADNativeAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdLoader.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/DFPBannerView.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADMobileAds.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInterstitial.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADExtras.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRequestError.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADRequest.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADBannerView.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdSize.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
-- "/Users/mgualino/Desktop/Development/StadiumShow/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "./GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "./GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "./GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "./GoogleMobileAds.framework/Headers/GADExtras.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "./GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "./GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "./GoogleMobileAds.framework/Headers/GADRequest.h"
+- "./GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "./GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "./GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "./GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "./GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "./GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "ccc9ec8e209f97fb85c91e3feba72acc"

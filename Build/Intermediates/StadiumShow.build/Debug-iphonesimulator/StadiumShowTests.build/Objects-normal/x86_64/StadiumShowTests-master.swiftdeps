@@ -1,4 +1,5 @@
-version: "Apple Swift version 1.2 (swiftlang-602.0.53.1 clang-602.0.53)"
-options: "31908b21ff09855bfa365d405684d1f8"
-inputs: 
-- "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShowTests/StadiumShowTests.swift"
+version: "Apple Swift version 2.1 (swiftlang-700.1.100.4 clang-700.1.75)"
+options: "88b70a4515a14cc2c03079f5905f40ee"
+build_time: [497633292, 917678000]
+inputs:
+  "/Users/mgualino/Desktop/Development/StadiumShow/StadiumShowTests/StadiumShowTests.swift": [493943864, 0]
